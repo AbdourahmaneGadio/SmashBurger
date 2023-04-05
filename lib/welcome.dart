@@ -23,7 +23,7 @@ class WelcomePage extends StatelessWidget {
                   "Bienvenue chez SmashBurger!",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 35,
+                      fontSize: 27,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
