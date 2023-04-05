@@ -484,7 +484,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/BigMac',
+                                      'assets/images/BigMac.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
