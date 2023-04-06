@@ -1,30 +1,28 @@
 import 'package:flutter/material.dart';
+import 'variables.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-
-  final scaffoldKey = GlobalKey<ScaffoldState>();
-  final _unfocusNode = FocusNode();
+  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey,
       backgroundColor: Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
-          onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+          
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: <Widget>[
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                   child: Container(
@@ -38,11 +36,11 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children:<Widget> [
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children:<Widget> [
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0, 0, 20, 15),
@@ -57,13 +55,11 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Text(
                             'Smash Burger',
-
                             style: TextStyle(
                               fontFamily: 'Rought Anthem',
                               fontSize: 34,
                             ),
                           ),
-
                         ],
                       ),
                     ),
@@ -73,232 +69,39 @@ class _HomePageState extends State<HomePage> {
                   width: double.infinity,
                   height: 420,
                   decoration: BoxDecoration(),
-                  child: ListView(
+                  child: ListView.builder(
                     padding: EdgeInsets.zero,
                     primary: false,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
-                        child: Container(
-                          width: 270,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 4,
-                                color: Color(0x26000000),
-                                offset: Offset(6, 6),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  elevation: 0,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        2, 2, 2, 2),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(12),
-                                      child: Image.asset(
-                                        'assets/images/buffalo.jpg',
-                                        width: double.infinity,
-                                        height: 270,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Apprendre la recette n°1',
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Le Buffalo burger',
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
-                        child: Container(
-                          width: 270,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 4,
-                                color: Color(0x26000000),
-                                offset: Offset(6, 6),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  elevation: 0,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        2, 2, 2, 2),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(12),
-                                      child: Image.asset(
-                                        'assets/images/californien.jpg',
-                                        width: double.infinity,
-                                        height: 270,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Apprendre la recette n°2',
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Le California burger',
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
-                        child: Container(
-                          width: 270,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 4,
-                                color: Color(0x26000000),
-                                offset: Offset(6, 6),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  elevation: 0,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        2, 2, 2, 2),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(12),
-                                      child: Image.asset(
-                                        'assets/images/cryspy.jpg',
-                                        width: double.infinity,
-                                        height: 270,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Apprendre la recette n°3',
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
-                                  child: Text(
-                                    'Le Crispy burger',
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
-                        child: Container(
-                          width: 270,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 4,
-                                color: Color(0x26000000),
-                                offset: Offset(6, 6),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                    itemCount: formList.length,
+                    itemBuilder: (context, index) {
+                      Ressource ressource = formList[index];
 
+                      return Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
+                        child: Container(
+                          width: 270,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 247, 247, 247),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 4,
+                                color: Color(0x26000000),
+                                offset: Offset(6, 6),
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children:<Widget> [
+                                Card(
+                                  clipBehavior: Clip.antiAliasWithSaveLayer,
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
@@ -309,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(12),
                                       child: Image.asset(
-                                        'assets/images/BigMac.jpg',
+                                        ressource.urlimage,
                                         width: double.infinity,
                                         height: 270,
                                         fit: BoxFit.cover,
@@ -321,8 +124,9 @@ class _HomePageState extends State<HomePage> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Text(
-                                    'Apprendre la recette n°4',
-                                    style: TextStyle(                                      fontFamily: 'Poppins',
+                                    ressource.title,
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
@@ -331,23 +135,23 @@ class _HomePageState extends State<HomePage> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       12, 0, 0, 0),
                                   child: Text(
-                                    'Le Big-Mac',
-
+                                    ressource.des,
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      );
+                    },
                   ),
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(16, 6, 0, 0),
                   child: Text(
                     'Entrainement',
-                    style: TextStyle(                      fontFamily: 'Poppins',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
                     ),
@@ -374,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
+
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -400,7 +204,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/buffalo-california.jpg',
+                                      'assets/images/buffalo.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -461,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
+
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -488,7 +292,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/bigmac-Crispy.jpg',
+                                      'assets/images/BigMac.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -548,7 +352,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
+
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -574,7 +378,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/Final.jpg',
+                                      'assets/images/cryspy.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
