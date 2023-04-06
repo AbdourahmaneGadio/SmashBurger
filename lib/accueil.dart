@@ -130,29 +130,24 @@ class HomePage extends StatelessWidget {
                                     ressource.des,
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 12, 12, 12),
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      primary:
-                                          Color.fromRGBO(252, 192, 73, 0.863),
-                                      side: BorderSide(
-                                          width: 1,
-                                          color: const Color.fromARGB(0, 0, 0,
-                                              0)), //border width and color
-                                      elevation: 3, //elevation of button
-                                      shape: RoundedRectangleBorder(
-                                        //to set border radius to button
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    primary:
+                                        Color.fromRGBO(252, 192, 73, 0.863),
+                                    side: BorderSide(
+                                        width: 1,
+                                        color:
+                                            const Color.fromARGB(0, 0, 0, 0)),
+                                    elevation: 3,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
-                                    onPressed: () {
-                                      Navigator.pushNamed(
-                                          context, ressource.path);
-                                    },
-                                    child: Text("En savoir plus"),
                                   ),
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, ressource.path);
+                                  },
+                                  child: Text("En savoir plus"),
                                 ),
                               ],
                             ),
