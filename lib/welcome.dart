@@ -23,23 +23,24 @@ class WelcomePage extends StatelessWidget {
                   "Bienvenue chez SmashBurger!",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 27,
-                      fontWeight: FontWeight.bold),
+                      fontSize: 26,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                  " Formation complet pour la préparation de burgers ",
-                  style: TextStyle(color: Colors.grey.shade500, fontSize: 16),
+                  " Formation complète pour la préparation de burgers ",
+                  style: TextStyle(color: Colors.grey.shade500,fontFamily: 'Poppins', fontSize: 14),
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 Container(
-                  height: 50,
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: 40),
+                  height: 40,
+                  width: 200,
+                  margin: EdgeInsets.symmetric(horizontal: 60),
                   child: ElevatedButton(
                      onPressed: () {
                       Navigator.pushNamed(
@@ -49,14 +50,18 @@ class WelcomePage extends StatelessWidget {
                       );
                     },
                     child: Text(
-                      "Se Former ",
-                      style: TextStyle(fontSize: 16),
+                      "Se former ",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'Poppins',
+                        ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue,
+                      primary: Color.fromRGBO(252, 192, 73, 0.863),
                       onPrimary: Colors.white,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                     ),
                   ),
