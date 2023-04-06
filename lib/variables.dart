@@ -29,27 +29,27 @@ class QuizRessource {
   List<Ressource> formList = [
   Ressource(
     title: 'Recette n°1',
-    des: 'Apprenez à préparer le Big Mac comme un pro ',
-    urlimage: 'assets/images/sauce-big-mac.png',
-    path: '/',
-  ),
-  Ressource(
-    title: 'Recette n°2',
     des: 'Apprenez à préparer le Buffalo burger comme un chef ',
     urlimage: 'assets/images/buffalo.jpg',
     path: '/Buffalo',
   ),
   Ressource(
-    title: 'Recette n°3',
-    des: 'Apprenez à créer le Californien burger parfait',
+    title: 'Recette n°2',
+    des: 'Apprenez à créer le Californien burger parfait ',
     urlimage: 'assets/images/californien.jpg',
     path: '/Californien',
   ),
   Ressource(
-    title: 'Recette n°4',
+    title: 'Recette n°3',
     des: 'Apprenez à préparer ce burger à la panure croustillante',
-    urlimage: 'assets/images/cryspy.jpg',
-    path: '/Cryspy',
+    urlimage: 'assets/images/Crispy.jpg',
+    path: '/Crispy',
+  ),
+  Ressource(
+    title: 'Recette n°4',
+    des: 'Apprenez à préparer le Big Mac comme un pro',
+    urlimage: 'assets/images/BigMac.jpg',
+    path: '/BigMac',
   ),
 ];
 
@@ -57,19 +57,19 @@ List<QuizRessource> quizList = [
   QuizRessource(
     nomQuiz: 'Quiz n°1',
     desQuiz: 'Portant sur la recette 1 et 2.',
-    imageQuiz: 'assets/images/burger.jpg',
+    imageQuiz: 'assets/images/buffalo-california.jpg',
     pathQuiz: '/',
   ),
 QuizRessource(
     nomQuiz: 'Quiz n°2',
     desQuiz: 'Portant sur la recette 3 et 4.',
-    imageQuiz: 'assets/images/burger.jpg',
+    imageQuiz: 'assets/images/bigmac-Crispy.jpg',
     pathQuiz: 'Path',
   ),
   QuizRessource(
     nomQuiz: 'Quiz Final',
     desQuiz: 'Portant sur l\'ensembles des recettes',
-    imageQuiz: 'assets/images/burger.jpg',
+    imageQuiz: 'assets/images/Final.jpg',
     pathQuiz: 'Path',
   ),
 ];

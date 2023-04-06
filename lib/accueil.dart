@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-
+                              color: Color.fromARGB(255, 247, 247, 247),
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                             child: GestureDetector(
                               onTap: (){
                                 print('ligne 1');
-                                Navigator.pushNamed(context, "/Buffalo");
+                                Navigator.pushNamed(context, "/bigMac");
                               },
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -204,7 +204,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/buffalo.jpg',
+                                      'assets/images/buffalo-california.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -265,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-
+                              color: Color.fromARGB(255, 247, 247, 247),
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -292,7 +292,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/BigMac.jpg',
+                                      'assets/images/bigmac-Crispy.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -352,7 +352,7 @@ class _HomePageState extends State<HomePage> {
                             width: double.infinity,
                             height: 90,
                             decoration: BoxDecoration(
-
+                              color: Color.fromARGB(255, 247, 247, 247),
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 3,
@@ -378,7 +378,7 @@ class _HomePageState extends State<HomePage> {
                                       topRight: Radius.circular(0),
                                     ),
                                     child: Image.asset(
-                                      'assets/images/cryspy.jpg',
+                                      'assets/images/Final.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,

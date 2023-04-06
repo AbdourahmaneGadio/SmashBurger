@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
           '/BigMac3': (context) => const BigMacPageThree(),
           '/Buffalo': (context) => WelcomePage(),
           '/Californien': (context) => WelcomePage(),
-          '/Cryspy': (context) => WelcomePage(),
+          '/Crispy': (context) => WelcomePage(),
           '/ResultatQuiz': (context) => const ResultatQuiz(),
 
 

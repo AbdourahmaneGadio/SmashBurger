@@ -81,6 +81,9 @@ flutter:
     - assets/images/Logo_smash_burger.png
     - assets/images/BigMac.jpg
     - assets/images/bigmac-Crispy.jpg
+    - assets/images/buffalo-california.jpg
+    - assets/images/Crispy.jpg
+    - assets/images/Final.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
