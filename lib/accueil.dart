@@ -84,7 +84,6 @@ class _HomePageState extends State<HomePage> {
                           width: 270,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4,
@@ -164,277 +163,100 @@ class _HomePageState extends State<HomePage> {
                     color: Color(0x00FFFFFF),
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
-                    child: ListView(
-                      padding: EdgeInsets.zero,
-                      primary: false,
-                      shrinkWrap: true,
-                      scrollDirection: Axis.vertical,
-                      children: [
-                        Padding(
-                          padding:
-                          EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
-                          child: Container(
-                            width: double.infinity,
-                            height: 90,
-                            decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 3,
-                                  color: Color(0x32000000),
-                                  offset: Offset(0, 1),
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                print('ligne 1');
-                                Navigator.pushNamed(context, "/bigMac");
-                              },
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(8),
-                                      bottomRight: Radius.circular(0),
-                                      topLeft: Radius.circular(8),
-                                      topRight: Radius.circular(0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                      child: ListView.builder(
+                        padding: EdgeInsets.zero,
+                        primary: false,
+                        shrinkWrap: true,
+                        scrollDirection: Axis.vertical,
+                        itemCount: quizList.length,
+                        itemBuilder: (context, index) {
+                          QuizRessource quiz = quizList[index];
+                          return Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
+                            child: Container(
+                              width: double.infinity,
+                              height: 90,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 3,
+                                    color: Color(0x32000000),
+                                    offset: Offset(0, 1),
+                                  )
+                                ],
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.pushNamed(context, quiz.pathQuiz);
+                                },
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children:<Widget> [
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(8),
+                                        bottomRight: Radius.circular(0),
+                                        topLeft: Radius.circular(8),
+                                        topRight: Radius.circular(0),
+                                      ),
+                                      child: Image.asset(
+                                        quiz.imageQuiz,
+                                        width: 100,
+                                        height: 100,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
-                                    child: Image.asset(
-                                      'assets/images/buffalo-california.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 0, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Quiz n°1',
-                                          style: TextStyle(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF090F13),
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w500,
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 0, 0, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            quiz.nomQuiz,
+                                            style: TextStyle(
+                                              fontFamily: 'Outfit',
+                                              color: Color(0xFF090F13),
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                           ),
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 4, 0, 0),
-                                              child: Text(
-                                                'Portant sur la recette 1 et 2.',
-                                                style:
-                                                TextStyle(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                  Color(0xFF7C8791),
-                                                  fontSize: 14,
-                                                  fontWeight:
-                                                  FontWeight.normal,
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children:<Widget> [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(0, 4, 0, 0),
+                                                child: Text(
+                                                  quiz.desQuiz,
+                                                  style: TextStyle(
+                                                    fontFamily: 'Outfit',
+                                                    color: Color(0xFF7C8791),
+                                                    fontSize: 14,
+                                                    fontWeight:
+                                                        FontWeight.normal,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding:
-                          EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
-                          child: Container(
-                            width: double.infinity,
-                            height: 90,
-                            decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 3,
-                                  color: Color(0x32000000),
-                                  offset: Offset(0, 1),
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                print('ligne 2');
-                                Navigator.pushNamed(context, "/BigMac");
-                              },
-                              child:
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(8),
-                                      bottomRight: Radius.circular(0),
-                                      topLeft: Radius.circular(8),
-                                      topRight: Radius.circular(0),
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/bigmac-Crispy.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 0, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Quiz n°2',
-                                          style: TextStyle(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF090F13),
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w500,
+                                            ],
                                           ),
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 4, 0, 0),
-                                              child: Text(
-                                                'Portant sur la recette 3 et 4.',
-                                                style:
-                                                TextStyle(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                  Color(0xFF7C8791),
-                                                  fontSize: 14,
-                                                  fontWeight:
-                                                  FontWeight.normal,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                          child: Container(
-                            width: double.infinity,
-                            height: 90,
-                            decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 247, 247, 247),
-                              boxShadow: [
-                                BoxShadow(
-                                  blurRadius: 3,
-                                  color: Color(0x32000000),
-                                  offset: Offset(0, 1),
-                                )
-                              ],
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                print('ligne 3');
-                                Navigator.pushNamed(context, "/BigMac");
-                              },
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(8),
-                                      bottomRight: Radius.circular(0),
-                                      topLeft: Radius.circular(8),
-                                      topRight: Radius.circular(0),
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/Final.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 0, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Quiz Final',
-                                          style: TextStyle(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF090F13),
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Padding(
-                                              padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 4, 0, 0),
-                                              child: Text(
-                                                'Portant sur l\'ensembles des recettes',
-                                                style:
-                                                TextStyle(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                  Color(0xFF7C8791),
-                                                  fontSize: 14,
-                                                  fontWeight:
-                                                  FontWeight.normal,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                          );
+                        },
+                      )),
                 ),
               ],
             ),

@@ -28,26 +28,26 @@ class QuizRessource {
 }
   List<Ressource> formList = [
   Ressource(
-    title: 'Recette n°1',
-    des: 'Apprenez à préparer le Buffalo burger comme un chef ',
+    title:'Apprendre la recette n°1',
+    des:'Le Buffalo burger',
     urlimage: 'assets/images/buffalo.jpg',
     path: '/Buffalo',
   ),
   Ressource(
-    title: 'Recette n°2',
-    des: 'Apprenez à créer le Californien burger parfait ',
+    title: 'Apprendre la recette n°2',
+    des: 'Le California burger',
     urlimage: 'assets/images/californien.jpg',
     path: '/Californien',
   ),
   Ressource(
-    title: 'Recette n°3',
-    des: 'Apprenez à préparer ce burger à la panure croustillante',
+    title: 'Apprendre la recette n°3',
+    des: 'Le Crispy burger',
     urlimage: 'assets/images/Crispy.jpg',
     path: '/Crispy',
   ),
   Ressource(
-    title: 'Recette n°4',
-    des: 'Apprenez à préparer le Big Mac comme un pro',
+    title: 'Apprendre la recette n°4',
+    des: 'Le Big-Mac',
     urlimage: 'assets/images/BigMac.jpg',
     path: '/BigMac',
   ),
