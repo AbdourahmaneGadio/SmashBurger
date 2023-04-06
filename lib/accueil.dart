@@ -9,15 +9,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
-          
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -36,11 +33,11 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:<Widget> [
+                        children: <Widget>[
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children:<Widget> [
+                            children: <Widget>[
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0, 0, 20, 15),
@@ -84,6 +81,7 @@ class _HomePageState extends State<HomePage> {
                           width: 270,
                           height: 100,
                           decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 247, 247, 247),
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4,
@@ -98,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children:<Widget> [
+                              children: <Widget>[
                                 Card(
                                   clipBehavior: Clip.antiAliasWithSaveLayer,
                                   elevation: 0,
@@ -135,6 +133,30 @@ class _HomePageState extends State<HomePage> {
                                       12, 0, 0, 0),
                                   child: Text(
                                     ressource.des,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      12, 12, 12, 12),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: Color.fromARGB(
+                                          0xFF, 0x42, 0xA5, 0xF5),
+                                      side: BorderSide(
+                                          width: 3,
+                                          color: Colors
+                                              .black), //border width and color
+                                      elevation: 3, //elevation of button
+                                      shape: RoundedRectangleBorder(
+                                        //to set border radius to button
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, ressource.path);
+                                    },
+                                    child: Text("En savoir plus"),
                                   ),
                                 ),
                               ],
@@ -179,6 +201,7 @@ class _HomePageState extends State<HomePage> {
                               width: double.infinity,
                               height: 90,
                               decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 247, 247, 247),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 3,
@@ -194,7 +217,7 @@ class _HomePageState extends State<HomePage> {
                                 },
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
-                                  children:<Widget> [
+                                  children: <Widget>[
                                     ClipRRect(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(8),
@@ -230,7 +253,7 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           Row(
                                             mainAxisSize: MainAxisSize.max,
-                                            children:<Widget> [
+                                            children: <Widget>[
                                               Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(0, 4, 0, 0),
