@@ -84,6 +84,7 @@ class _HomePageState extends State<HomePage> {
                           width: 270,
                           height: 100,
                           decoration: BoxDecoration(
+                                                          color: Color.fromARGB(255, 247, 247, 247),
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4,
@@ -179,6 +180,7 @@ class _HomePageState extends State<HomePage> {
                               width: double.infinity,
                               height: 90,
                               decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 247, 247, 247),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 3,
