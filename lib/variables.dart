@@ -64,13 +64,13 @@ QuizRessource(
     nomQuiz: 'Quiz n°2',
     desQuiz: 'Portant sur la recette 3 et 4.',
     imageQuiz: 'assets/images/bigmac-Crispy.jpg',
-    pathQuiz: 'Path',
+    pathQuiz: '/',
   ),
   QuizRessource(
     nomQuiz: 'Quiz Final',
     desQuiz: 'Portant sur l\'ensembles des recettes',
     imageQuiz: 'assets/images/Final.jpg',
-    pathQuiz: 'Path',
+    pathQuiz: '/',
   ),
 ];
 

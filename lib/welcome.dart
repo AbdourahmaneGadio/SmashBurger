@@ -32,7 +32,10 @@ class WelcomePage extends StatelessWidget {
                 ),
                 Text(
                   " Formation complète pour la préparation de burgers ",
-                  style: TextStyle(color: Colors.grey.shade500,fontFamily: 'Poppins', fontSize: 14),
+                  style: TextStyle(
+                      color: Colors.grey.shade500,
+                      fontFamily: 'Poppins',
+                      fontSize: 14),
                 ),
                 SizedBox(
                   height: 20,
@@ -42,11 +45,10 @@ class WelcomePage extends StatelessWidget {
                   width: 200,
                   margin: EdgeInsets.symmetric(horizontal: 130),
                   child: ElevatedButton(
-                     onPressed: () {
+                    onPressed: () {
                       Navigator.pushNamed(
                         context,
-                        '/page1',
-                        
+                        '/Home',
                       );
                     },
                     child: Text(
@@ -55,7 +57,7 @@ class WelcomePage extends StatelessWidget {
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
                         fontFamily: 'Poppins',
-                        ),
+                      ),
                     ),
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromRGBO(252, 192, 73, 0.863),
