@@ -140,14 +140,15 @@ class _HomePageState extends State<HomePage> {
                                       12, 12, 12, 12),
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                      primary: Color.fromRGBO(252, 192, 73, 0.863),
+                                      primary: Color.fromARGB(0xFF, 0x42, 0xA5, 0xF5),
                                       side: BorderSide(
-                                          width: 1,
-                                          color: const Color.fromARGB(0, 0, 0, 0)), //border width and color
+                                          width: 3,
+                                          color: Colors
+                                              .black), //border width and color
                                       elevation: 3, //elevation of button
                                       shape: RoundedRectangleBorder(
                                         //to set border radius to button
-                                        borderRadius: BorderRadius.circular(8),
+                                        borderRadius: BorderRadius.circular(30),
                                       ),
                                     ),
                                     onPressed: () {
