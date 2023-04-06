@@ -140,15 +140,12 @@ class _HomePageState extends State<HomePage> {
                                       12, 12, 12, 12),
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                      primary: Color.fromARGB(
-                                          0xFF, 0x42, 0xA5, 0xF5),
+                                      primary: Color.fromARGB(0xFF, 0x42, 0xA5, 0xF5),
                                       side: BorderSide(
                                           width: 3,
-                                          color: Colors
-                                              .black), //border width and color
-                                      elevation: 3, //elevation of button
+                                          color: Colors.black),
+                                      elevation: 3, 
                                       shape: RoundedRectangleBorder(
-                                        //to set border radius to button
                                         borderRadius: BorderRadius.circular(30),
                                       ),
                                     ),
