@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             'Smash Burger',
                             style: TextStyle(
-                              fontFamily: 'Rought Anthem',
+                              fontFamily: 'Rough',
                               fontSize: 34,
                             ),
                           ),
