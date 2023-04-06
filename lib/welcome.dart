@@ -40,7 +40,7 @@ class WelcomePage extends StatelessWidget {
                 Container(
                   height: 40,
                   width: 200,
-                  margin: EdgeInsets.symmetric(horizontal: 60),
+                  margin: EdgeInsets.symmetric(horizontal: 130),
                   child: ElevatedButton(
                      onPressed: () {
                       Navigator.pushNamed(
