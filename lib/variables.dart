@@ -58,33 +58,33 @@ List<QuizRessource> quizList = [
     nomQuiz: 'Quiz n°1',
     desQuiz: 'Portant sur la recette 1 et 2.',
     imageQuiz: 'assets/images/buffalo-california.jpg',
-    pathQuiz: '/',
+    pathQuiz: '/Quiz1',
   ),
 QuizRessource(
     nomQuiz: 'Quiz n°2',
     desQuiz: 'Portant sur la recette 3 et 4.',
     imageQuiz: 'assets/images/bigmac-Crispy.jpg',
-    pathQuiz: '/',
+    pathQuiz: '/Quiz2',
   ),
   QuizRessource(
     nomQuiz: 'Quiz Final',
     desQuiz: 'Portant sur l\'ensembles des recettes',
     imageQuiz: 'assets/images/Final.jpg',
-    pathQuiz: '/',
+    pathQuiz: '/Quiz3',
   ),
 ];
 
 List quiz1 = [
   {'titre': 'Réponse I - 1',
-    'reponse': 'En 1868',
+    'reponse': 'Le buffle',
   },
 
   {'titre': 'Réponse I - 2',
-    'reponse': 'En 1948',
+    'reponse': 'Le bison',
   },
   {
     'titre': 'Réponse I - 3',
-    'reponse': 'En 1960',
+    'reponse': 'Le boeuf',
   },
 ];
 

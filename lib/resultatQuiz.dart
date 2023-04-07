@@ -30,7 +30,7 @@ Text(
               ElevatedButton(
                 child: Text("Retour à l'accueil"),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/page1');
+                  Navigator.pushNamed(context, '/Home');
                 },
               ),
                       ]

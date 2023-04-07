@@ -15,8 +15,8 @@ class quiz1Page extends StatefulWidget{
 class _Quiz1State extends State{
 
 
-  String vraieReponseBigMac = 'En 1868';
-  String reponseBigMacDonnee = '';
+  String vraieReponse = 'Le bison';
+  String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
     Icon(Icons.check_box_outline_blank_rounded),
@@ -56,7 +56,7 @@ class _Quiz1State extends State{
                   Column(
                       children: [
                         Text(
-                          "Question 1 : Quand a été crée le BigMac ?",
+                          "Question 1 : Quel animal a inspiré la création du Buffalo Burger ?",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -74,10 +74,10 @@ class _Quiz1State extends State{
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = quiz1[indice]['reponse'];
+                                reponseDonnee = quiz1[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
-                                if(verifReponse(reponseBigMacDonnee) == true){
+                                if(verifReponse(reponseDonnee) == true){
                                   iconCoche[indice] = Icon(Icons.check_circle);
                                   couleurIcone = Colors.green;
                                 }
@@ -98,7 +98,7 @@ class _Quiz1State extends State{
                           ElevatedButton(
                             child: Text('Question suivante '),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/BigMac2');
+                              Navigator.pushNamed(context, '/Quiz2');
                             },
                           ),
                           )
@@ -114,7 +114,7 @@ class _Quiz1State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponseBigMac){
+    if(reponseDonnee != vraieReponse){
       return false;
     }
     else{

@@ -15,8 +15,8 @@ class quiz3Page extends StatefulWidget{
 class quiz3State extends State{
 
 
-  String vraieReponseBigMac = 'En 1868';
-  String reponseBigMacDonnee = '';
+  String vraieReponse = 'En 1868';
+  String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
     Icon(Icons.check_box_outline_blank_rounded),
@@ -74,10 +74,10 @@ class quiz3State extends State{
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = quiz3[indice]['reponse'];
+                                reponseDonnee = quiz3[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
-                                if(verifReponse(reponseBigMacDonnee) == true){
+                                if(verifReponse(reponseDonnee) == true){
                                   iconCoche[indice] = Icon(Icons.check_circle);
                                   couleurIcone = Colors.green;
                                   boutonVisible = true;
@@ -114,7 +114,7 @@ class quiz3State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponseBigMac){
+    if(reponseDonnee != vraieReponse){
       return false;
     }
     else{
