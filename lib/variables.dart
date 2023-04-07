@@ -43,13 +43,13 @@ class QuizRessource {
     title: 'Apprendre la recette n°3',
     des: 'Le Crispy burger',
     urlimage: 'assets/images/Crispy.jpg',
-    path: '/Crispy',
+    path: '/Recette3',
   ),
   Ressource(
     title: 'Apprendre la recette n°4',
     des: 'Le Big-Mac',
     urlimage: 'assets/images/BigMac.jpg',
-    path: '/BigMac',
+    path: '/Recette4',
   ),
 ];
 

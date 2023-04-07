@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'package:video_player/video_player.dart';
 
-class Recette1 extends StatefulWidget {
-  const Recette1({super.key});
+class Recette4 extends StatefulWidget {
+  const Recette4({super.key});
 
   @override
-  _Recette1State createState() => _Recette1State();
+  _Recette4State createState() => _Recette4State();
 }
 
-class _Recette1State extends State<Recette1> {
+class _Recette4State extends State<Recette4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _Recette1State extends State<Recette1> {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
-                            'assets/images/buffalo.jpg',
+                            'assets/images/BigMac.jpg',
                           ).image,
                         ),
                       ),
@@ -54,7 +54,7 @@ class _Recette1State extends State<Recette1> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
-                          height: 1700,
+                          height: 1900,
                           decoration: BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
@@ -81,7 +81,7 @@ class _Recette1State extends State<Recette1> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       25, 16, 0, 0),
                                   child: Text(
-                                    'Buffalo Burger',
+                                    'Le BigMac',
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontSize: 24,
@@ -141,7 +141,7 @@ class _Recette1State extends State<Recette1> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     6, 0, 25, 0),
                                             child: Text(
-                                              '3min',
+                                              '5min',
                                               style: TextStyle(
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.w400,
@@ -209,7 +209,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '- Oignons\n- Tomates fraîches\n- Cornichons\n- Bacon fumé\n- Cheddar en tranches\n- Viande de boeuf hâchée\n- Herbes de provence\n- Barbecue sauce\n- Tabasco',
+                                      '- 2 steaks hachés\n- 4 tranches de fromage cheddar\n- 3 Pains à burger\n- 1/4 tasse de cornichons coupés en petits dés\n- 2 cuillères à soupe d\'oignon coupé en petits dés\n- Sauce secrète Big Mac\n- 4 feuilles de laitue iceberg\n- Sel et poivre',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -232,7 +232,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '1. Façonnez les steaks avec un emporte pièces avec poussoir par exemple ou à la main.\n\n2. Faites revenir un oignon dans une poêle avec de l\'huile d\'olive, ajoutez-y une petite cuillère à soupe de vinaigre et une cuillère à soupe de sucre.\n\n3. Laissez caraméliser quelques minutes\nFaites cuire les steaks dans une poêle avec de l\'huile d\'olive 1 minute de chaque côté\n\n4. Tranchez les buns en deux et badigeonnez les bases et les chapeaux d\'huile d\'olive.\n\n5. Garnissez les bases des buns avec un lit d\'oignons , disposez le steak puis une tranche de cheddar.\n\n6. Passez sous le grill à 200 ° dans la partie haute du four pendant 4 minutes en surveillant.\n\n7. En sortant du four, ajoutez une rondelle de tomate et les pousses d\'épinards et recouvrez avec les chapeaux.',
+                                      '1. Préchauffez votre grill ou votre plancha à feu moyen-élevé.\n\n2. Dans un bol, mélangez les cornichons et les oignons.\n\n3. Dans un autre bol, mélangez la mayonnaise, le ketchup, la moutarde, le vinaigre, le sucre, le paprika, le sel et le poivre pour faire la sauce spéciale.\n\n4. Faites cuire les steaks hachés jusqu\'à ce qu\'ils soient bien cuits, environ 2-3 minutes de chaque côté.\n\n5. Coupez les pains à burger en deux et faites-les griller sur le grill ou la plancha jusqu\'à ce qu\'ils soient légèrement dorés.\n\n6. Pour assembler le burger, étalez une couche de sauce spéciale sur le pain à burger inférieur, ajoutez une feuille de laitue, un steak haché de 50 g, une tranche de fromage cheddar, une deuxième tranche de pain à burger, puis une deuxième couche de sauce spéciale, une feuille de laitue, un steak haché de 30 g, une tranche de fromage cheddar, et enfin le pain à burger supérieur.\n\nVotre Big Mac est maintenant prêt à être dégusté !',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -254,7 +254,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      'En 1948 Hicham Sagouti  avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
+                                      'En 1967, un franchisé de McDonald\'s nommé Jim Delligatti avait une idée pour un nouveau burger. Il a voulu créer un burger plus gros que le burger standard de McDonald\'s, avec deux steaks hachés, une sauce spéciale et trois tranches de pain. Après plusieurs essais, il a finalement créé le Big Mac, qui est rapidement devenu l\'un des burgers les plus populaires au monde.',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w400,
@@ -283,10 +283,10 @@ class _Recette1State extends State<Recette1> {
                                           ),
                                         ),
                                         onPressed: () {
-                                          Navigator.pushNamed(context, '/Recette2');
+                                          Navigator.pushNamed(context, '/Home');
                                         },
                                         child: Text(
-                                          "Voir recette n°2",
+                                          "Passer aux Quiz",
                                           style: TextStyle(
                                             color: Color.fromARGB(255, 255, 255, 255),
                                           ),

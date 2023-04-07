@@ -85,7 +85,7 @@ class _Recette2State extends State<Recette2> {
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontSize: 24,
-                                      fontWeight: FontWeight.w400,
+                                      fontWeight: FontWeight.w800,
                                       fontFamily: 'Poppins',
                                     ),
                                   ),
@@ -199,8 +199,8 @@ class _Recette2State extends State<Recette2> {
                                     child: Text(
                                       'Liste des ingrédients:',
                                       style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w500,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w800,
                                         fontFamily: 'Poppins',
                                       ),
                                     ),
@@ -222,8 +222,8 @@ class _Recette2State extends State<Recette2> {
                                     child: Text(
                                       'Préparation:',
                                       style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w400,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w800,
                                         fontFamily: 'Poppins',
                                       ),
                                     ),
@@ -232,7 +232,7 @@ class _Recette2State extends State<Recette2> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '1. Préchauffez votre grill ou votre poêle à feu moyen-élevé.\n\n2. Dans un grand bol, mélangez la viande hachée avec l\'ail, l\'oignon rouge haché, une cuillère à soupe d\'huile d\'olive, du sel et du poivre. Formez 4 boules de viande et aplatissez-les pour former des steaks de la taille de vos pains à burger.\n\n3. Coupez l\'avocat en deux, retirez le noyau et écrasez la chair dans un petit bol avec une fourchette. Ajoutez une pincée de sel et de poivre.\n\n4. Coupez la tomate en tranches fines et lavez les feuilles de laitue.\n\n5. Badigeonnez les steaks de bœuf avec le reste de l\'huile d\'olive et faites-les cuire sur le grill ou la poêle pendant environ 4 minutes de chaque côté, ou jusqu\'à ce qu\'ils soient bien cuits. Ajoutez une tranche de fromage sur chaque steak à mi-cuisson.\n\n6. Pendant que les steaks cuisent, faites griller les pains à burger jusqu\'à ce qu\'ils soient légèrement dorés.\n\n7. Pour assembler le burger, étalez de la purée d\'avocat sur la base du pain à burger, ajoutez une feuille de laitue, une tranche de tomate, le steak de bœuf avec le fromage fondu, et terminez avec le pain à burger supérieur. Répétez pour les autres burgers.',
+                                      '1. Préchauffez votre grill ou votre poêle à feu moyen-élevé.\n\n2. Dans un grand bol, mélangez la viande hachée avec l\'ail, l\'oignon rouge haché, une cuillère à soupe d\'huile d\'olive, du sel et du poivre. Formez 4 boules de viande et aplatissez-les pour former des steaks de la taille de vos pains à burger.\n\n3. Coupez l\'avocat en deux, retirez le noyau et écrasez la chair dans un petit bol avec une fourchette. Ajoutez une pincée de sel et de poivre.\n\n4. Coupez la tomate en tranches fines et lavez les feuilles de laitue.\n\n5. Badigeonnez les steaks de bœuf avec le reste de l\'huile d\'olive et faites-les cuire sur le grill ou la poêle pendant environ 4 minutes de chaque côté, ou jusqu\'à ce qu\'ils soient bien cuits. Ajoutez une tranche de fromage sur chaque steak à mi-cuisson.\n\n6. Pendant que les steaks cuisent, faites griller les pains à burger jusqu\'à ce qu\'ils soient légèrement dorés.\n\n7. Pour assembler le burger, étalez de la purée d\'avocat sur la base du pain à burger, ajoutez une feuille de laitue, une tranche de tomate, le steak de bœuf avec le fromage fondu, et terminez avec le pain à burger supérieur.\n\nVotre California Burger est maintenant prêt à être dégusté !',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -245,8 +245,8 @@ class _Recette2State extends State<Recette2> {
                                     child: Text(
                                       'Histroire:',
                                       style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w400,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w800,
                                           fontFamily: 'Poppins'),
                                     ),
                                   ),

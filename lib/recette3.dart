@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'package:video_player/video_player.dart';
 
-class Recette1 extends StatefulWidget {
-  const Recette1({super.key});
+class Recette3 extends StatefulWidget {
+  const Recette3({super.key});
 
   @override
-  _Recette1State createState() => _Recette1State();
+  _Recette3State createState() => _Recette3State();
 }
 
-class _Recette1State extends State<Recette1> {
+class _Recette3State extends State<Recette3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _Recette1State extends State<Recette1> {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
-                            'assets/images/buffalo.jpg',
+                            'assets/images/Crispy.jpg',
                           ).image,
                         ),
                       ),
@@ -54,7 +54,7 @@ class _Recette1State extends State<Recette1> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
-                          height: 1700,
+                          height: 2100,
                           decoration: BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
@@ -81,7 +81,7 @@ class _Recette1State extends State<Recette1> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       25, 16, 0, 0),
                                   child: Text(
-                                    'Buffalo Burger',
+                                    'Crispy Burger',
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontSize: 24,
@@ -141,7 +141,7 @@ class _Recette1State extends State<Recette1> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     6, 0, 25, 0),
                                             child: Text(
-                                              '3min',
+                                              '5min',
                                               style: TextStyle(
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.w400,
@@ -209,7 +209,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '- Oignons\n- Tomates fraîches\n- Cornichons\n- Bacon fumé\n- Cheddar en tranches\n- Viande de boeuf hâchée\n- Herbes de provence\n- Barbecue sauce\n- Tabasco',
+                                      '- filets de poitrine de poulet\n- 1 tasse de farine tout usage\n- 1 cuillère à café de paprika\n- 2 gousses d\'ail hachées\n- Cheddar en tranches\n- Pains à burger\n- 1 tasse de chapelure panko\n- 1 tomate moyenne\n- 1 œuf',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -232,7 +232,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '1. Façonnez les steaks avec un emporte pièces avec poussoir par exemple ou à la main.\n\n2. Faites revenir un oignon dans une poêle avec de l\'huile d\'olive, ajoutez-y une petite cuillère à soupe de vinaigre et une cuillère à soupe de sucre.\n\n3. Laissez caraméliser quelques minutes\nFaites cuire les steaks dans une poêle avec de l\'huile d\'olive 1 minute de chaque côté\n\n4. Tranchez les buns en deux et badigeonnez les bases et les chapeaux d\'huile d\'olive.\n\n5. Garnissez les bases des buns avec un lit d\'oignons , disposez le steak puis une tranche de cheddar.\n\n6. Passez sous le grill à 200 ° dans la partie haute du four pendant 4 minutes en surveillant.\n\n7. En sortant du four, ajoutez une rondelle de tomate et les pousses d\'épinards et recouvrez avec les chapeaux.',
+                                      '1. Préchauffez votre four à 200°C et préparez une plaque de cuisson en la recouvrant de papier sulfurisé.\n\n2. Dans un bol, mélangez la farine, le paprika, l\'ail en poudre, le sel et le poivre.\n\n3. Coupez l\'avocat en deux, retirez le noyau et écrasez la chair dans un petit bol avec une fourchette. Ajoutez une pincée de sel et de poivre.\n\n4. Dans un autre bol, fouettez l\'œuf et le lait ensemble.\n\n5. Dans un troisième bol, mettez la chapelure panko.\n\n6. Prenez les filets de poulet et trempez-les successivement dans la farine, l\'œuf battu et la chapelure panko, en veillant à bien recouvrir chaque morceau de poulet.\n\n7. Dans une poêle, faites chauffer l\'huile végétale à feu moyen-élevé. Faites cuire les filets de poulet jusqu\'à ce qu\'ils soient dorés et croustillants, environ 3-4 minutes de chaque côté.\n\n8.Pendant que les filets de poulet cuisent, faites griller les pains à burger jusqu\'à ce qu\'ils soient légèrement dorés.\n\n9.Pour assembler le burger, posez une feuille de laitue sur la base du pain à burger, ajoutez une tranche de tomate, un filet de poulet croustillant, une tranche de fromage cheddar, et terminez avec le pain à burger supérieur.\n\nVotre Crispy Burger est maintenant prêt à être dégusté ! ',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -254,7 +254,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      'En 1948 Hicham Sagouti  avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
+                                      'En 1985, un chef de cuisine nommé Tony a commencé à travailler dans un petit restaurant de burgers. Il avait une passion pour la nourriture croustillante et a commencé à réfléchir à la façon de créer un burger avec une croûte croustillante et dorée. Après des mois d\'essais et d\'erreurs, il a finalement créé le Crispy Burger, un burger au poulet frit croustillant qui a rapidement gagné en popularité auprès des clients.',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w400,
@@ -283,10 +283,10 @@ class _Recette1State extends State<Recette1> {
                                           ),
                                         ),
                                         onPressed: () {
-                                          Navigator.pushNamed(context, '/Recette2');
+                                          Navigator.pushNamed(context, '/Recette4');
                                         },
                                         child: Text(
-                                          "Voir recette n°2",
+                                          "Voir recette n°4",
                                           style: TextStyle(
                                             color: Color.fromARGB(255, 255, 255, 255),
                                           ),
