@@ -74,7 +74,7 @@ QuizRessource(
   ),
 ];
 
-List bigMacReponses = [
+List quiz1 = [
   {'titre': 'Réponse I - 1',
     'reponse': 'En 1868',
   },
@@ -84,6 +84,34 @@ List bigMacReponses = [
   },
   {
     'titre': 'Réponse I - 3',
+    'reponse': 'En 1960',
+  },
+];
+
+List quiz2 = [
+  {'titre': 'Réponse II - 1',
+    'reponse': 'En 1868',
+  },
+
+  {'titre': 'Réponse II - 2',
+    'reponse': 'En 1948',
+  },
+  {
+    'titre': 'Réponse II - 3',
+    'reponse': 'En 1960',
+  },
+];
+
+List quiz3 = [
+  {'titre': 'Réponse III - 1',
+    'reponse': 'En 1868',
+  },
+
+  {'titre': 'Réponse III - 2',
+    'reponse': 'En 1948',
+  },
+  {
+    'titre': 'Réponse III - 3',
     'reponse': 'En 1960',
   },
 ];

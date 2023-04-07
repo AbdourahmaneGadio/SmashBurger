@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:smash_burger/accueil.dart';
 
-import 'package:smash_burger/BigMac/bigMac.dart';
-import 'package:smash_burger/BigMac/bigMacTwo.dart';
-import 'package:smash_burger/BigMac/bigMacThree.dart';
-import 'package:smash_burger/recette1.dart';
-import 'package:smash_burger/recette2.dart';
-import 'package:smash_burger/recette3.dart';
-import 'package:smash_burger/recette4.dart';
+import 'package:smash_burger/quiz/quiz1.dart';
+import 'package:smash_burger/quiz/quiz2.dart';
+import 'package:smash_burger/quiz/quiz3.dart';
+
+import 'package:smash_burger/recettes/recette1.dart';
+import 'package:smash_burger/recettes/recette2.dart';
+import 'package:smash_burger/recettes/recette3.dart';
+import 'package:smash_burger/recettes/recette4.dart';
+
 import 'package:smash_burger/resultatQuiz.dart';
 
 import 'package:smash_burger/welcome.dart';
@@ -33,9 +35,9 @@ class MyApp extends StatelessWidget {
           '/': (context) => const WelcomePage(),
           '/Home' :(context) => const HomePage(),
           //Changer le WelcomePage avec les pages de descripion
-          '/BigMac': (context) => const BigMacPage(),
-          '/BigMac2': (context) => const BigMacPageTwo(),
-          '/BigMac3': (context) => const BigMacPageThree(),
+          '/Quiz1': (context) => const quiz1Page(),
+          '/Quiz2': (context) => const quiz2Page(),
+          '/Quiz3': (context) => const quiz3Page(),
           '/Recette1': (context) => const Recette1(),
           '/Recette2': (context) => const Recette2(),
           '/Recette3': (context) => const Recette3(),

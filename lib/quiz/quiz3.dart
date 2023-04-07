@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class BigMacPageTwo extends StatefulWidget{
+class quiz3Page extends StatefulWidget{
 
-  const BigMacPageTwo({super.key});
+  const quiz3Page({super.key});
 
   @override
-  _BigMacTwoState createState() => _BigMacTwoState();
+  quiz3State createState() => quiz3State();
 
 }
 
-class _BigMacTwoState extends State{
+class quiz3State extends State{
 
 
   String vraieReponseBigMac = 'En 1868';
@@ -64,17 +64,17 @@ class _BigMacTwoState extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<bigMacReponses.length; indice++ )
+                        for(var indice=0; indice<quiz3.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(bigMacReponses[indice]['reponse']),
+                            title: Text(quiz3[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = bigMacReponses[indice]['reponse'];
+                                reponseBigMacDonnee = quiz3[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
                                 if(verifReponse(reponseBigMacDonnee) == true){
@@ -96,9 +96,9 @@ class _BigMacTwoState extends State{
                             visible: boutonVisible,
                             child:
                           ElevatedButton(
-                            child: Text('Question suivante '),
+                            child: Text('Résultat du quiz'),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/BigMac3');
+                              Navigator.pushNamed(context, '/ResultatQuiz');
                             },
                           ),
                           )

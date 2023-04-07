@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class BigMacPage extends StatefulWidget{
+class quiz2Page extends StatefulWidget{
 
-  const BigMacPage({super.key});
+  const quiz2Page({super.key});
 
   @override
-  _BigMacState createState() => _BigMacState();
+  _Quiz2State createState() => _Quiz2State();
 
 }
 
-class _BigMacState extends State{
+class _Quiz2State extends State{
 
 
   String vraieReponseBigMac = 'En 1868';
@@ -64,22 +64,23 @@ class _BigMacState extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<bigMacReponses.length; indice++ )
+                        for(var indice=0; indice<quiz2.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(bigMacReponses[indice]['reponse']),
+                            title: Text(quiz2[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = bigMacReponses[indice]['reponse'];
+                                reponseBigMacDonnee = quiz2[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
                                 if(verifReponse(reponseBigMacDonnee) == true){
                                   iconCoche[indice] = Icon(Icons.check_circle);
                                   couleurIcone = Colors.green;
+                                  boutonVisible = true;
                                 }
                                 else{
                                   iconCoche = List.filled(3, Icon(Icons.highlight_off_rounded));
@@ -87,7 +88,6 @@ class _BigMacState extends State{
                                 }
 
                                 boutonVisible = true;
-
                               });
                             },
                           ),
@@ -98,7 +98,7 @@ class _BigMacState extends State{
                           ElevatedButton(
                             child: Text('Question suivante '),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/BigMac2');
+                              Navigator.pushNamed(context, '/BigMac3');
                             },
                           ),
                           )
