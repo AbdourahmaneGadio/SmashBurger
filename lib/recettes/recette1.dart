@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:video_player/video_player.dart';
+import 'package:video_player/video_player.dart';
 
 class Recette1 extends StatefulWidget {
   const Recette1({super.key});
@@ -9,6 +9,23 @@ class Recette1 extends StatefulWidget {
 }
 
 class _Recette1State extends State<Recette1> {
+  late VideoPlayerController controller;
+
+  void initState() {
+    loadVideoPlayer();
+    super.initState();
+  }
+
+  loadVideoPlayer() {
+    controller = VideoPlayerController.network('assets/videos/CrispyVideo.mp4');
+    controller.addListener(() {
+      setState(() {});
+    });
+    controller.initialize().then((value) {
+      setState(() {});
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,9 +35,9 @@ class _Recette1State extends State<Recette1> {
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              children: [
+              children:<Widget> [
                 Stack(
-                  children: [
+                  children:<Widget> [
                     Container(
                       width: double.infinity,
                       height: 300,
@@ -74,7 +91,7 @@ class _Recette1State extends State<Recette1> {
                           ),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children:<Widget> [
                               Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
@@ -97,18 +114,18 @@ class _Recette1State extends State<Recette1> {
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children:<Widget> [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
-                                              Icons.lens,
-                                              color: Color(0x6A70FF38),
-                                              size: 18,
-                                            ),
+                                            Icons.lens,
+                                            color: Color(0x6A70FF38),
+                                            size: 18,
+                                          ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -130,7 +147,7 @@ class _Recette1State extends State<Recette1> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
                                             Icons.access_time_outlined,
                                             color: Color(0x6AAC0D0D),
@@ -157,7 +174,7 @@ class _Recette1State extends State<Recette1> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
                                             Icons.local_dining_sharp,
                                             color: Color(0x6C000000),
@@ -192,7 +209,7 @@ class _Recette1State extends State<Recette1> {
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children:<Widget> [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         12, 16, 0, 8),
@@ -264,7 +281,47 @@ class _Recette1State extends State<Recette1> {
                                       ),
                                     ),
                                   ),
-                                  Align(
+                                 
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        25, 0, 25, 0),
+                                    child: Column(
+                                      children: <Widget>[
+                                        AspectRatio(
+                                          aspectRatio:
+                                              controller.value.aspectRatio,
+                                          child: VideoPlayer(controller),
+                                        ),
+                                        VideoProgressIndicator(
+                                          controller,
+                                          allowScrubbing: true,
+                                          colors: VideoProgressColors(
+                                            playedColor: Colors.red,
+                                            bufferedColor: Colors.grey,
+                                          ),
+                                        ),
+                                        Row(
+                                          children: <Widget>[
+                                            IconButton(
+                                              onPressed: () {
+                                                if (controller
+                                                    .value.isPlaying) {
+                                                  controller.pause();
+                                                } else {
+                                                  controller.play();
+                                                }
+                                              },
+                                              icon: Icon(
+                                                  controller.value.isPlaying
+                                                      ? Icons.pause
+                                                      : Icons.play_arrow),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                   Align(
                                     alignment: AlignmentDirectional(0.7, 0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -283,30 +340,19 @@ class _Recette1State extends State<Recette1> {
                                           ),
                                         ),
                                         onPressed: () {
-                                          Navigator.pushNamed(context, '/Recette2');
+                                          Navigator.pushNamed(
+                                              context, '/Recette2');
                                         },
                                         child: Text(
                                           "Voir recette n°2",
                                           style: TextStyle(
-                                            color: Color.fromARGB(255, 255, 255, 255),
+                                            color: Color.fromARGB(
+                                                255, 255, 255, 255),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                  // Padding(
-                                  // padding: EdgeInsetsDirectional.fromSTEB(
-                                  //     25, 0, 25, 0),
-                                  // child: FlutterFlowVideoPlayer(
-                                  //   path: 'assets/videos/CrispyVideo.mp4',
-                                  //   videoType: VideoType.asset,
-                                  //   autoPlay: false,
-                                  //   looping: true,
-                                  //   showControls: true,
-                                  //   allowFullScreen: true,                                  
-                                  //   allowPlaybackSpeedMenu: false,
-                                  //   ),
-                                  // ),
                                 ],
                               ),
                             ],

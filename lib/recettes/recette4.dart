@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:video_player/video_player.dart';
+import 'package:video_player/video_player.dart';
 
 class Recette4 extends StatefulWidget {
   const Recette4({super.key});
@@ -9,6 +9,22 @@ class Recette4 extends StatefulWidget {
 }
 
 class _Recette4State extends State<Recette4> {
+  late VideoPlayerController controller;
+
+  void initState() {
+    loadVideoPlayer();
+    super.initState();
+  }
+
+  loadVideoPlayer() {
+    controller = VideoPlayerController.network('assets/videos/CrispyVideo.mp4');
+    controller.addListener(() {
+      setState(() {});
+    });
+    controller.initialize().then((value) {
+      setState(() {});
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,9 +34,9 @@ class _Recette4State extends State<Recette4> {
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              children: [
+              children:<Widget> [
                 Stack(
-                  children: [
+                  children:<Widget> [
                     Container(
                       width: double.infinity,
                       height: 300,
@@ -74,7 +90,7 @@ class _Recette4State extends State<Recette4> {
                           ),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children:<Widget> [
                               Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
@@ -97,13 +113,13 @@ class _Recette4State extends State<Recette4> {
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children:<Widget> [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
                                               Icons.lens,
                                               color: Color(0x6A70FF38),
@@ -130,7 +146,7 @@ class _Recette4State extends State<Recette4> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
                                             Icons.access_time_outlined,
                                             color: Color(0x6AAC0D0D),
@@ -157,7 +173,7 @@ class _Recette4State extends State<Recette4> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [
+                                        children:<Widget> [
                                           Icon(
                                             Icons.local_dining_sharp,
                                             color: Color(0x6C000000),
@@ -192,7 +208,7 @@ class _Recette4State extends State<Recette4> {
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
+                                children:<Widget> [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         12, 16, 0, 8),
@@ -262,6 +278,45 @@ class _Recette4State extends State<Recette4> {
                                         color:
                                             Color.fromRGBO(32, 32, 32, 0.863),
                                       ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        25, 0, 25, 0),
+                                    child: Column(
+                                      children: <Widget>[
+                                        AspectRatio(
+                                          aspectRatio:
+                                              controller.value.aspectRatio,
+                                          child: VideoPlayer(controller),
+                                        ),
+                                        VideoProgressIndicator(
+                                          controller,
+                                          allowScrubbing: true,
+                                          colors: VideoProgressColors(
+                                            playedColor: Colors.red,
+                                            bufferedColor: Colors.grey,
+                                          ),
+                                        ),
+                                        Row(
+                                          children: <Widget>[
+                                            IconButton(
+                                              onPressed: () {
+                                                if (controller
+                                                    .value.isPlaying) {
+                                                  controller.pause();
+                                                } else {
+                                                  controller.play();
+                                                }
+                                              },
+                                              icon: Icon(
+                                                  controller.value.isPlaying
+                                                      ? Icons.pause
+                                                      : Icons.play_arrow),
+                                            ),
+                                          ],
+                                        )
+                                      ],
                                     ),
                                   ),
                                   Align(

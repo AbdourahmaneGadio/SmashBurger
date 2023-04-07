@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   audioplayers: ^3.0.1
   flutter_launcher_icons: ^0.12.0
+  video_player: ^2.6.1
 
 dev_dependencies:
   flutter_test:
@@ -84,7 +85,7 @@ flutter:
     - assets/images/buffalo-california.jpg
     - assets/images/Crispy.jpg
     - assets/images/Final.jpg
-    #- assets/videos/CripyVideo.mp4
+    - assets/videos/CrispyVideo.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
