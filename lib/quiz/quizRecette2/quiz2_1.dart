@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class quiz1Page extends StatefulWidget{
+class quizRecette_2_1_Page extends StatefulWidget{
 
-  const quiz1Page({super.key});
+  const quizRecette_2_1_Page({super.key});
 
   @override
-  _Quiz1State createState() => _Quiz1State();
+  _QuizRecette_2_1_State createState() => _QuizRecette_2_1_State();
 
 }
 
-class _Quiz1State extends State{
+class _QuizRecette_2_1_State extends State{
 
 
   String vraieReponse = 'Le bison';
@@ -98,7 +98,7 @@ class _Quiz1State extends State{
                           ElevatedButton(
                             child: Text('Question suivante '),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/Quiz2');
+                              Navigator.pushNamed(context, '/QuizRecette_1_2');
                             },
                           ),
                           )

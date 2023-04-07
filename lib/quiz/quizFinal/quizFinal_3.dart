@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class quiz3Page extends StatefulWidget{
+class quizRecette_Final_3_Page extends StatefulWidget{
 
-  const quiz3Page({super.key});
+  const quizRecette_Final_3_Page({super.key});
 
   @override
-  quiz3State createState() => quiz3State();
+  quizRecette_Final_3_State createState() => quizRecette_Final_3_State();
 
 }
 
-class quiz3State extends State{
+class quizRecette_Final_3_State extends State{
 
 
   String vraieReponse = 'En 1868';

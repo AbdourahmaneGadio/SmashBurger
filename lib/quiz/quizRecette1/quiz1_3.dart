@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class quiz2Page extends StatefulWidget{
+class quizRecette_1_3_Page extends StatefulWidget{
 
-  const quiz2Page({super.key});
+  const quizRecette_1_3_Page({super.key});
 
   @override
-  _Quiz2State createState() => _Quiz2State();
+  quizRecette_1_3_State createState() => quizRecette_1_3_State();
 
 }
 
-class _Quiz2State extends State{
+class quizRecette_1_3_State extends State{
 
 
   String vraieReponse = 'En 1868';
@@ -64,17 +64,17 @@ class _Quiz2State extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<quiz2.length; indice++ )
+                        for(var indice=0; indice<quiz3.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(quiz2[indice]['reponse']),
+                            title: Text(quiz3[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseDonnee = quiz2[indice]['reponse'];
+                                reponseDonnee = quiz3[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
                                 if(verifReponse(reponseDonnee) == true){
@@ -96,9 +96,9 @@ class _Quiz2State extends State{
                             visible: boutonVisible,
                             child:
                           ElevatedButton(
-                            child: Text('Question suivante '),
+                            child: Text('Résultat du quiz'),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/Quiz3');
+                              Navigator.pushNamed(context, '/ResultatQuiz');
                             },
                           ),
                           )
