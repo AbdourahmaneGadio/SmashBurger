@@ -31,13 +31,13 @@ class QuizRessource {
     title:'Apprendre la recette n°1',
     des:'Le Buffalo burger',
     urlimage: 'assets/images/buffalo.jpg',
-    path: '/Buffalo',
+    path: '/Recette1',
   ),
   Ressource(
     title: 'Apprendre la recette n°2',
     des: 'Le California burger',
     urlimage: 'assets/images/californien.jpg',
-    path: '/Californien',
+    path: '/Recette2',
   ),
   Ressource(
     title: 'Apprendre la recette n°3',

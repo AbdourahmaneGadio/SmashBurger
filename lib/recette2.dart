@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'package:video_player/video_player.dart';
 
-class Recette1 extends StatefulWidget {
-  const Recette1({super.key});
+class Recette2 extends StatefulWidget {
+  const Recette2({super.key});
 
   @override
-  _Recette1State createState() => _Recette1State();
+  _Recette2State createState() => _Recette2State();
 }
 
-class _Recette1State extends State<Recette1> {
+class _Recette2State extends State<Recette2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _Recette1State extends State<Recette1> {
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
-                            'assets/images/buffalo.jpg',
+                            'assets/images/californien.jpg',
                           ).image,
                         ),
                       ),
@@ -54,7 +54,7 @@ class _Recette1State extends State<Recette1> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
-                          height: 1700,
+                          height: 1900,
                           decoration: BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
@@ -81,7 +81,7 @@ class _Recette1State extends State<Recette1> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       25, 16, 0, 0),
                                   child: Text(
-                                    'Buffalo Burger',
+                                    'California Burger',
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontSize: 24,
@@ -141,7 +141,7 @@ class _Recette1State extends State<Recette1> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     6, 0, 25, 0),
                                             child: Text(
-                                              '3min',
+                                              '5min',
                                               style: TextStyle(
                                                 fontSize: 18,
                                                 fontWeight: FontWeight.w400,
@@ -209,7 +209,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '- Oignons\n- Tomates fraîches\n- Cornichons\n- Bacon fumé\n- Cheddar en tranches\n- Viande de boeuf hâchée\n- Herbes de provence\n- Barbecue sauce\n- Tabasco',
+                                      '- 500g de viande de bœuf hachée\n- 1 avocat mûr\n- 1 oignon rouge moyen\n- 2 gousses d\'ail hachées\n- Cheddar en tranches\n- Pains à burger\n- 1 tomate moyenne\n- Sauce Cocktail\n- Sel et poivre',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -232,7 +232,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      '1. Façonnez les steaks avec un emporte pièces avec poussoir par exemple ou à la main.\n\n2. Faites revenir un oignon dans une poêle avec de l\'huile d\'olive, ajoutez-y une petite cuillère à soupe de vinaigre et une cuillère à soupe de sucre.\n\n3. Laissez caraméliser quelques minutes\nFaites cuire les steaks dans une poêle avec de l\'huile d\'olive 1 minute de chaque côté\n\n4. Tranchez les buns en deux et badigeonnez les bases et les chapeaux d\'huile d\'olive.\n\n5. Garnissez les bases des buns avec un lit d\'oignons , disposez le steak puis une tranche de cheddar.\n\n6. Passez sous le grill à 200 ° dans la partie haute du four pendant 4 minutes en surveillant.\n\n7. En sortant du four, ajoutez une rondelle de tomate et les pousses d\'épinards et recouvrez avec les chapeaux.',
+                                      '1. Préchauffez votre grill ou votre poêle à feu moyen-élevé.\n\n2. Dans un grand bol, mélangez la viande hachée avec l\'ail, l\'oignon rouge haché, une cuillère à soupe d\'huile d\'olive, du sel et du poivre. Formez 4 boules de viande et aplatissez-les pour former des steaks de la taille de vos pains à burger.\n\n3. Coupez l\'avocat en deux, retirez le noyau et écrasez la chair dans un petit bol avec une fourchette. Ajoutez une pincée de sel et de poivre.\n\n4. Coupez la tomate en tranches fines et lavez les feuilles de laitue.\n\n5. Badigeonnez les steaks de bœuf avec le reste de l\'huile d\'olive et faites-les cuire sur le grill ou la poêle pendant environ 4 minutes de chaque côté, ou jusqu\'à ce qu\'ils soient bien cuits. Ajoutez une tranche de fromage sur chaque steak à mi-cuisson.\n\n6. Pendant que les steaks cuisent, faites griller les pains à burger jusqu\'à ce qu\'ils soient légèrement dorés.\n\n7. Pour assembler le burger, étalez de la purée d\'avocat sur la base du pain à burger, ajoutez une feuille de laitue, une tranche de tomate, le steak de bœuf avec le fromage fondu, et terminez avec le pain à burger supérieur. Répétez pour les autres burgers.',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
@@ -254,7 +254,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      'En 1948 Hicham Sagouti  avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
+                                      'En 1991, Carlos Ramirez, chef originaire de Los Angeles, cherchait à créer un burger différent et rafraîchissant. Il a eu l\'idée d\'utiliser de l\'avocat pour ajouter une saveur crémeuse à son burger et a travaillé dur pour trouver la meilleure façon de l\'intégrer. En mélangeant de la purée d\'avocat dans la viande hachée, il a créé le \"California Burger\", qui est rapidement devenu populaire dans notre restaurant.',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w400,
@@ -283,10 +283,10 @@ class _Recette1State extends State<Recette1> {
                                           ),
                                         ),
                                         onPressed: () {
-                                          Navigator.pushNamed(context, '/Recette2');
+                                          Navigator.pushNamed(context, '/Recette3');
                                         },
                                         child: Text(
-                                          "Voir recette n°2",
+                                          "Voir recette n°3",
                                           style: TextStyle(
                                             color: Color.fromARGB(255, 255, 255, 255),
                                           ),
