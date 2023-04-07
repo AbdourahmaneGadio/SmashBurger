@@ -70,7 +70,7 @@ QuizRessource(
     nomQuiz: 'Quiz Final',
     desQuiz: 'Portant sur l\'ensembles des recettes',
     imageQuiz: 'assets/images/Final.jpg',
-    pathQuiz: '/QuizRecette_Final',
+    pathQuiz: '/QuizRecette_Final_1',
   ),
 ];
 

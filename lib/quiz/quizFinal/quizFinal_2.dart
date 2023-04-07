@@ -98,7 +98,7 @@ class quizRecette_Final_2_State extends State{
                           ElevatedButton(
                             child: Text('Question suivante '),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/QuizRecette_1_3');
+                              Navigator.pushNamed(context, '/QuizRecette_Final_3');
                             },
                           ),
                           )
