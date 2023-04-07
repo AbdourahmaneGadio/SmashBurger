@@ -349,19 +349,7 @@ class _Recette3State extends State<Recette3> {
                                       ),
                                     ),
                                   ),
-                                  // Padding(
-                                  // padding: EdgeInsetsDirectional.fromSTEB(
-                                  //     25, 0, 25, 0),
-                                  // child: FlutterFlowVideoPlayer(
-                                  //   path: 'assets/videos/CrispyVideo.mp4',
-                                  //   videoType: VideoType.asset,
-                                  //   autoPlay: false,
-                                  //   looping: true,
-                                  //   showControls: true,
-                                  //   allowFullScreen: true,                                  
-                                  //   allowPlaybackSpeedMenu: false,
-                                  //   ),
-                                  // ),
+                                 
                                 ],
                               ),
                             ],
