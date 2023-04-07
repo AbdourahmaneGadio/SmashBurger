@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class quiz3Page extends StatefulWidget{
+class quizRecette_Final_1_Page extends StatefulWidget{
 
-  const quiz3Page({super.key});
+  const quizRecette_Final_1_Page({super.key});
 
   @override
-  quiz3State createState() => quiz3State();
+  _QuizRecette_Final_1_State createState() => _QuizRecette_Final_1_State();
 
 }
 
-class quiz3State extends State{
+class _QuizRecette_Final_1_State extends State{
 
 
-  String vraieReponseBigMac = 'En 1868';
-  String reponseBigMacDonnee = '';
+  String vraieReponse = 'Le bison';
+  String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
     Icon(Icons.check_box_outline_blank_rounded),
@@ -56,7 +56,7 @@ class quiz3State extends State{
                   Column(
                       children: [
                         Text(
-                          "Question 1 : Quand a été crée le BigMac ?",
+                          "Question 1 : Quel animal a inspiré la création du Buffalo Burger ?",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -64,23 +64,22 @@ class quiz3State extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<quiz3.length; indice++ )
+                        for(var indice=0; indice<quiz1.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(quiz3[indice]['reponse']),
+                            title: Text(quiz1[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = quiz3[indice]['reponse'];
+                                reponseDonnee = quiz1[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
-                                if(verifReponse(reponseBigMacDonnee) == true){
+                                if(verifReponse(reponseDonnee) == true){
                                   iconCoche[indice] = Icon(Icons.check_circle);
                                   couleurIcone = Colors.green;
-                                  boutonVisible = true;
                                 }
                                 else{
                                   iconCoche = List.filled(3, Icon(Icons.highlight_off_rounded));
@@ -88,6 +87,7 @@ class quiz3State extends State{
                                 }
 
                                 boutonVisible = true;
+
                               });
                             },
                           ),
@@ -96,9 +96,9 @@ class quiz3State extends State{
                             visible: boutonVisible,
                             child:
                           ElevatedButton(
-                            child: Text('Résultat du quiz'),
+                            child: Text('Question suivante '),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/ResultatQuiz');
+                              Navigator.pushNamed(context, '/QuizRecette_Final_2');
                             },
                           ),
                           )
@@ -114,7 +114,7 @@ class quiz3State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponseBigMac){
+    if(reponseDonnee != vraieReponse){
       return false;
     }
     else{

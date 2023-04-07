@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
 
-class quiz1Page extends StatefulWidget{
+class quizRecette_1_3_Page extends StatefulWidget{
 
-  const quiz1Page({super.key});
+  const quizRecette_1_3_Page({super.key});
 
   @override
-  _Quiz1State createState() => _Quiz1State();
+  quizRecette_1_3_State createState() => quizRecette_1_3_State();
 
 }
 
-class _Quiz1State extends State{
+class quizRecette_1_3_State extends State{
 
 
-  String vraieReponseBigMac = 'En 1868';
-  String reponseBigMacDonnee = '';
+  String vraieReponse = 'En 1868';
+  String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
     Icon(Icons.check_box_outline_blank_rounded),
@@ -64,22 +64,23 @@ class _Quiz1State extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<quiz1.length; indice++ )
+                        for(var indice=0; indice<quiz3.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(quiz1[indice]['reponse']),
+                            title: Text(quiz3[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseBigMacDonnee = quiz1[indice]['reponse'];
+                                reponseDonnee = quiz3[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
-                                if(verifReponse(reponseBigMacDonnee) == true){
+                                if(verifReponse(reponseDonnee) == true){
                                   iconCoche[indice] = Icon(Icons.check_circle);
                                   couleurIcone = Colors.green;
+                                  boutonVisible = true;
                                 }
                                 else{
                                   iconCoche = List.filled(3, Icon(Icons.highlight_off_rounded));
@@ -87,7 +88,6 @@ class _Quiz1State extends State{
                                 }
 
                                 boutonVisible = true;
-
                               });
                             },
                           ),
@@ -96,9 +96,9 @@ class _Quiz1State extends State{
                             visible: boutonVisible,
                             child:
                           ElevatedButton(
-                            child: Text('Question suivante '),
+                            child: Text('Résultat du quiz'),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/BigMac2');
+                              Navigator.pushNamed(context, '/ResultatQuiz');
                             },
                           ),
                           )
@@ -114,7 +114,7 @@ class _Quiz1State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponseBigMac){
+    if(reponseDonnee != vraieReponse){
       return false;
     }
     else{
