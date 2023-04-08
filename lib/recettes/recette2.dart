@@ -11,6 +11,7 @@ class Recette2 extends StatefulWidget {
 class _Recette2State extends State<Recette2> {
   late VideoPlayerController controller;
 
+  @override
   void initState() {
     loadVideoPlayer();
     super.initState();
