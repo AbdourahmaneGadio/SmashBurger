@@ -115,3 +115,5 @@ List quiz3 = [
     'reponse': 'En 1960',
   },
 ];
+
+var scoreQuiz = 0;

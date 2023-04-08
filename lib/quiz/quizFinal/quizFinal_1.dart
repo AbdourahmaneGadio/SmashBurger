@@ -118,6 +118,7 @@ class _QuizRecette_Final_1_State extends State{
       return false;
     }
     else{
+      scoreQuiz+=1;
       return true;
     }
   }

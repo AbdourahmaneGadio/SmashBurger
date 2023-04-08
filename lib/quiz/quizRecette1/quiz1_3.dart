@@ -117,7 +117,7 @@ class quizRecette_1_3_State extends State{
     if(reponseDonnee != vraieReponse){
       return false;
     }
-    else{
+    else{scoreQuiz+=1;
       return true;
     }
   }

@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
 import 'package:collection/collection.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class ResultatQuiz extends StatefulWidget{
 
@@ -14,29 +15,74 @@ class ResultatQuiz extends StatefulWidget{
 
 class _ResultatQuizState extends State {
 
+    final scaffoldKey = GlobalKey<ScaffoldState>();
+  final _unfocusNode = FocusNode();
+
+late double score;
+late double pourcentage;
+String textPourcentage  = '';
+
+@override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+      score = scoreQuiz/3;
+  pourcentage = score * 100;
+  textPourcentage = pourcentage.toStringAsFixed(2) + " %";
+  }
+
+
 @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+      child: Scaffold(
+        key: scaffoldKey,
+ appBar: AppBar(
           centerTitle: true,
           title: const Text('SMASH FORMATION'),
           leading: Image.asset('assets/images/logo.png', height: 50, width: 50),
         ),
-        body: Column(
+        body: SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-Text(
-    "Résultat du quiz :"
-),
-              ElevatedButton(
-                child: Text("Retour à l'accueil"),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/Home');
-                },
+              Text(
+                'Fin du quiz',
+                textAlign: TextAlign.center,
+                
               ),
-                      ]
-                  )
-              );
-
+              CircularPercentIndicator(
+                percent: score,
+                radius: 150,
+                lineWidth: 24,
+                animation: true,
+                progressColor: Colors.green,
+                backgroundColor: Colors.red,
+                center: Text(
+                  textPourcentage,
+                  style: TextStyle(
+                    fontSize: 20
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreQuiz = 0;
+                              Navigator.pushNamed(context, '/Home');
+                },
+                child:
+                Text('Retour à l\'accueil\n'),
+                
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
 }
