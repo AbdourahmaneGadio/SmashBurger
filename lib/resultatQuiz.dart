@@ -69,15 +69,24 @@ String textPourcentage  = '';
                   ),
                 ),
               ),
+              Container(
+                 width: 30,
+                  height: 40,
+                                  margin: EdgeInsets.all(50),
+                child:
               ElevatedButton(
                 onPressed: () {
                   scoreQuiz = 0;
                               Navigator.pushNamed(context, '/Home');
                 },
-                child:
-                Text('Retour à l\'accueil\n'),
+               
+                  child:
+                Text(
+                  'Retour à l\'accueil\n',
+                  ),
+                  
                 
-              ),
+              ),)
             ],
           ),
         ),
