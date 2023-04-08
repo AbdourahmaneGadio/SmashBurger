@@ -17,7 +17,7 @@ class _Recette1State extends State<Recette1> {
   // }
 
   // loadVideoPlayer() {
-  //   controller = VideoPlayerController.network('https://www.youtube.com/watch?v=f4W0J0B0mKY&ab_channel=AllrecipesFrance');
+  //   controller = VideoPlayerController.network('https://www.youtube.com/watch?v=72iOWuX9hdM&ab_channel=TheBaldChef');
   //   controller.addListener(() {
   //     setState(() {});
   //   });

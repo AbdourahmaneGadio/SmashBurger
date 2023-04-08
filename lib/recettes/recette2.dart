@@ -9,23 +9,23 @@ class Recette2 extends StatefulWidget {
 }
 
 class _Recette2State extends State<Recette2> {
-  late VideoPlayerController controller;
+  // late VideoPlayerController controller;
 
-  @override
-  void initState() {
-    loadVideoPlayer();
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   loadVideoPlayer();
+  //   super.initState();
+  // }
 
-  loadVideoPlayer() {
-    controller = VideoPlayerController.network('assets/videos/CrispyVideo.mp4');
-    controller.addListener(() {
-      setState(() {});
-    });
-    controller.initialize().then((value) {
-      setState(() {});
-    });
-  }
+  // loadVideoPlayer() {
+  //   controller = VideoPlayerController.network('https://www.youtube.com/watch?v=f4W0J0B0mKY&ab_channel=AllrecipesFrance');
+  //   controller.addListener(() {
+  //     setState(() {});
+  //   });
+  //   controller.initialize().then((value) {
+  //     setState(() {});
+  //   });
+  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -281,45 +281,45 @@ class _Recette2State extends State<Recette2> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        25, 0, 25, 0),
-                                    child: Column(
-                                      children: <Widget>[
-                                        AspectRatio(
-                                          aspectRatio:
-                                              controller.value.aspectRatio,
-                                          child: VideoPlayer(controller),
-                                        ),
-                                        VideoProgressIndicator(
-                                          controller,
-                                          allowScrubbing: true,
-                                          colors: VideoProgressColors(
-                                            playedColor: Colors.red,
-                                            bufferedColor: Colors.grey,
-                                          ),
-                                        ),
-                                        Row(
-                                          children: <Widget>[
-                                            IconButton(
-                                              onPressed: () {
-                                                if (controller
-                                                    .value.isPlaying) {
-                                                  controller.pause();
-                                                } else {
-                                                  controller.play();
-                                                }
-                                              },
-                                              icon: Icon(
-                                                  controller.value.isPlaying
-                                                      ? Icons.pause
-                                                      : Icons.play_arrow),
-                                            ),
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                                  // Padding(
+                                  //   padding: EdgeInsetsDirectional.fromSTEB(
+                                  //       25, 0, 25, 0),
+                                  //   child: Column(
+                                  //     children: <Widget>[
+                                  //       AspectRatio(
+                                  //         aspectRatio:
+                                  //             controller.value.aspectRatio,
+                                  //         child: VideoPlayer(controller),
+                                  //       ),
+                                  //       VideoProgressIndicator(
+                                  //         controller,
+                                  //         allowScrubbing: true,
+                                  //         colors: VideoProgressColors(
+                                  //           playedColor: Colors.red,
+                                  //           bufferedColor: Colors.grey,
+                                  //         ),
+                                  //       ),
+                                  //       Row(
+                                  //         children: <Widget>[
+                                  //           IconButton(
+                                  //             onPressed: () {
+                                  //               if (controller
+                                  //                   .value.isPlaying) {
+                                  //                 controller.pause();
+                                  //               } else {
+                                  //                 controller.play();
+                                  //               }
+                                  //             },
+                                  //             icon: Icon(
+                                  //                 controller.value.isPlaying
+                                  //                     ? Icons.pause
+                                  //                     : Icons.play_arrow),
+                                  //           ),
+                                  //         ],
+                                  //       )
+                                  //     ],
+                                  //   ),
+                                  // ),
                                   Align(
                                     alignment: AlignmentDirectional(0.7, 0),
                                     child: Padding(
