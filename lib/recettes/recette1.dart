@@ -35,9 +35,9 @@ class _Recette1State extends State<Recette1> {
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              children:<Widget> [
+              children: <Widget>[
                 Stack(
-                  children:<Widget> [
+                  children: <Widget>[
                     Container(
                       width: double.infinity,
                       height: 300,
@@ -71,7 +71,7 @@ class _Recette1State extends State<Recette1> {
                         padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
-                          height: 1700,
+                          height: 2000,
                           decoration: BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
@@ -91,7 +91,7 @@ class _Recette1State extends State<Recette1> {
                           ),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
-                            children:<Widget> [
+                            children: <Widget>[
                               Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
@@ -114,13 +114,13 @@ class _Recette1State extends State<Recette1> {
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children:<Widget> [
+                                  children: <Widget>[
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children:<Widget> [
+                                        children: <Widget>[
                                           Icon(
                                             Icons.lens,
                                             color: Color(0x6A70FF38),
@@ -147,7 +147,7 @@ class _Recette1State extends State<Recette1> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children:<Widget> [
+                                        children: <Widget>[
                                           Icon(
                                             Icons.access_time_outlined,
                                             color: Color(0x6AAC0D0D),
@@ -174,7 +174,7 @@ class _Recette1State extends State<Recette1> {
                                           16, 16, 0, 0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children:<Widget> [
+                                        children: <Widget>[
                                           Icon(
                                             Icons.local_dining_sharp,
                                             color: Color(0x6C000000),
@@ -209,7 +209,7 @@ class _Recette1State extends State<Recette1> {
                               Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children:<Widget> [
+                                children: <Widget>[
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         12, 16, 0, 8),
@@ -271,7 +271,7 @@ class _Recette1State extends State<Recette1> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         18, 0, 18, 20),
                                     child: Text(
-                                      'En 1948 Hicham Sagouti  avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
+                                      'En 1948 un jeune cuisinier du nom de Bill avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w400,
@@ -281,7 +281,6 @@ class _Recette1State extends State<Recette1> {
                                       ),
                                     ),
                                   ),
-                                 
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         25, 0, 25, 0),
@@ -321,7 +320,7 @@ class _Recette1State extends State<Recette1> {
                                       ],
                                     ),
                                   ),
-                                   Align(
+                                  Align(
                                     alignment: AlignmentDirectional(0.7, 0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
