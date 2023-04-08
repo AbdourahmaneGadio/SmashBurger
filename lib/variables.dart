@@ -74,7 +74,9 @@ QuizRessource(
   ),
 ];
 
-List quiz1 = [
+
+// Quiz n°1
+List quiz_recette_1_1_choix = [
   {'titre': 'Réponse I - 1',
     'reponse': 'Le buffle',
   },
@@ -88,32 +90,164 @@ List quiz1 = [
   },
 ];
 
-List quiz2 = [
+var quiz_recette_1_1_reponse = 'Le bison'; 
+
+
+
+List quiz_recette_1_2_choix = [
   {'titre': 'Réponse II - 1',
-    'reponse': 'En 1868',
+    'reponse': 'Carlos Ramirez',
   },
 
   {'titre': 'Réponse II - 2',
-    'reponse': 'En 1948',
+    'reponse': 'David Haukins',
   },
   {
     'titre': 'Réponse II - 3',
-    'reponse': 'En 1960',
+    'reponse': 'Patrick James',
   },
 ];
 
-List quiz3 = [
+
+var quiz_recette_1_2_reponse = 'Carlos Ramirez'; 
+
+
+List quiz_recette_1_3_choix = [
   {'titre': 'Réponse III - 1',
-    'reponse': 'En 1868',
+    'reponse': 'A point',
   },
 
   {'titre': 'Réponse III - 2',
-    'reponse': 'En 1948',
+    'reponse': 'Grillé',
   },
   {
     'titre': 'Réponse III - 3',
-    'reponse': 'En 1960',
+    'reponse': 'Fumé',
   },
 ];
+
+var quiz_recette_1_3_reponse = 'Fumé'; 
+
+
+
+
+
+
+
+
+
+// Quiz n°2
+List quiz_recette_2_1_choix = [
+  {'titre': 'Réponse I - 1',
+    'reponse': '1',
+  },
+
+  {'titre': 'Réponse I - 2',
+    'reponse': '3',
+  },
+  {
+    'titre': 'Réponse I - 3',
+    'reponse': '2',
+  },
+];
+
+var quiz_recette_2_1_reponse = '2'; 
+
+
+
+List quiz_recette_2_2_choix = [
+  {'titre': 'Réponse II - 1',
+    'reponse': 'Un petit restaurant de burgers',
+  },
+
+  {'titre': 'Réponse II - 2',
+    'reponse': 'Une grande chaîne de distribution',
+  },
+  {
+    'titre': 'Réponse II - 3',
+    'reponse': 'Un truck-food',
+  },
+];
+
+
+var quiz_recette_2_2_reponse = 'Un petit restaurant de burgers'; 
+
+
+List quiz_recette_2_3_choix = [
+  {'titre': 'Réponse III - 1',
+    'reponse': 'Chapelure panko',
+  },
+
+  {'titre': 'Réponse III - 2',
+    'reponse': 'Chapelure Bio',
+  },
+  {
+    'titre': 'Réponse III - 3',
+    'reponse': 'Chapelure douce',
+  },
+];
+
+var quiz_recette_2_3_reponse = 'Chapelure panko'; 
+
+
+
+
+
+
+
+// Quiz n°3
+List quiz_recette_Final_1_choix = [
+  {'titre': 'Réponse I - 1',
+    'reponse': 'Pain du bas, sauce Big Mac, laitue, fromage, cornichons, oignons',
+  },
+
+  {'titre': 'Réponse I - 2',
+    'reponse': 'Pain du bas, sauce Big Mac, laitue, fromage, viande hachée, cornichons',
+  },
+  {
+    'titre': 'Réponse I - 3',
+    'reponse': 'Pain du bas, sauce Big Mac, laitue, cornichons, viande hachée, oignons, fromage',
+  },
+];
+
+var quiz_recette_Final_1_reponse = 'Pain du bas, sauce Big Mac, laitue, fromage, viande hachée, cornichons';
+
+
+
+List quiz_recette_Final_2_choix = [
+  {'titre': 'Réponse II - 1',
+    'reponse': '210°C',
+  },
+
+  {'titre': 'Réponse II - 2',
+    'reponse': '200°C',
+  },
+  {
+    'titre': 'Réponse II - 3',
+    'reponse': '180°C',
+  },
+];
+
+
+var quiz_recette_Final_2_reponse = '200°C'; 
+
+
+List quiz_recette_Final_3_choix = [
+  {'titre': 'Réponse III - 1',
+    'reponse': '1948',
+  },
+
+  {'titre': 'Réponse III - 2',
+    'reponse': '1943',
+  },
+  {
+    'titre': 'Réponse III - 3',
+    'reponse': '1945',
+  },
+];
+
+var quiz_recette_Final_3_reponse = '1948'; 
+
+
 
 var scoreQuiz = 0;

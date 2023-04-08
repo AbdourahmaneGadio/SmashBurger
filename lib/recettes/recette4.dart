@@ -259,7 +259,7 @@ class _Recette4State extends State<Recette4> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         12, 16, 0, 8),
                                     child: Text(
-                                      'Histroire:',
+                                      'Histoire:',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w800,

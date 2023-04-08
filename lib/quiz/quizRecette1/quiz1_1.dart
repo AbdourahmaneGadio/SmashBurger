@@ -15,7 +15,6 @@ class quizRecette_1_1_Page extends StatefulWidget{
 class _QuizRecette_1_1_State extends State{
 
 
-  String vraieReponse = 'Le bison';
   String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
@@ -64,17 +63,17 @@ class _QuizRecette_1_1_State extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<quiz1.length; indice++ )
+                        for(var indice=0; indice<quiz_recette_1_1_choix.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(quiz1[indice]['reponse']),
+                            title: Text(quiz_recette_1_1_choix[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseDonnee = quiz1[indice]['reponse'];
+                                reponseDonnee = quiz_recette_1_1_choix[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
                                 if(verifReponse(reponseDonnee) == true){
@@ -114,7 +113,7 @@ class _QuizRecette_1_1_State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponse){
+    if(reponseDonnee != quiz_recette_1_1_reponse){
       return false;
     }
     else{scoreQuiz+=1;

@@ -14,8 +14,6 @@ class quizRecette_2_3_Page extends StatefulWidget{
 
 class quizRecette_2_3_State extends State{
 
-
-  String vraieReponse = 'En 1868';
   String reponseDonnee = '';
   List<Icon> iconCoche = [
     Icon(Icons.check_box_outline_blank_rounded),
@@ -56,7 +54,7 @@ class quizRecette_2_3_State extends State{
                   Column(
                       children: [
                         Text(
-                          "Question 1 : Quand a été crée le BigMac ?",
+                          "Question 3 : Quelle type de chapelure est utilisée dans le Crispy Burger ?",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -64,17 +62,17 @@ class quizRecette_2_3_State extends State{
                         ),
 
                         // Les différentes questions
-                        for(var indice=0; indice<quiz3.length; indice++ )
+                        for(var indice=0; indice<quiz_recette_2_3_choix.length; indice++ )
                           ListTile(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                                 side: BorderSide(width: 1)),
                             iconColor: couleurIcone,
-                            title: Text(quiz3[indice]['reponse']),
+                            title: Text(quiz_recette_2_3_choix[indice]['reponse']),
                             trailing: iconCoche[indice],
                             onTap: () async {
                               setState(() {
-                                reponseDonnee = quiz3[indice]['reponse'];
+                                reponseDonnee = quiz_recette_2_3_choix[indice]['reponse'];
 
                                 // Si la réponse est bonne, l'icone devient verte
                                 if(verifReponse(reponseDonnee) == true){
@@ -114,7 +112,7 @@ class quizRecette_2_3_State extends State{
   verifReponse(reponseDonnee){
 
     // Si la réponse ne correspond pas
-    if(reponseDonnee != vraieReponse){
+    if(reponseDonnee != quiz_recette_2_3_reponse){
       return false;
     }
     else{scoreQuiz+=1;
