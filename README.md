@@ -1,16 +1,9 @@
-# smash_burger
+# Smash Burger
 
-A new Flutter project.
+Cette application permet à son utilisateur de se former sur la création de burgers, grâce aux nombreuses recettes disponibles.
 
-## Getting Started
+Ses connaissances peuvent être testés, au travers des 3 quiz disponibles sur cette application.
 
-This project is a starting point for a Flutter application.
+## Voici une courte vidéo de présentation : 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![SmashBurger](https://user-images.githubusercontent.com/91066652/231247971-2423724d-4197-486e-966b-7e7808a1a663.gif)
