@@ -1,7 +1,5 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:smash_burger/variables.dart';
-import 'package:collection/collection.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class ResultatQuiz extends StatefulWidget{
@@ -29,7 +27,7 @@ String textPourcentage  = '';
 
       score = scoreQuiz/3;
   pourcentage = score * 100;
-  textPourcentage = pourcentage.toStringAsFixed(2) + " %";
+  textPourcentage = '${pourcentage.toStringAsFixed(2)} %';
   }
 
 
@@ -50,7 +48,7 @@ String textPourcentage  = '';
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
+              const Text(
                 'Fin du quiz',
                 textAlign: TextAlign.center,
                 
@@ -64,15 +62,15 @@ String textPourcentage  = '';
                 backgroundColor: Colors.red,
                 center: Text(
                   textPourcentage,
-                  style: TextStyle(
-                    fontSize: 20
+                  style: const TextStyle(
+                    fontSize: 20,
                   ),
                 ),
               ),
               Container(
                  width: 30,
                   height: 40,
-                                  margin: EdgeInsets.all(50),
+                                  margin: const EdgeInsets.all(50),
                 child:
               ElevatedButton(
                 onPressed: () {
@@ -81,7 +79,7 @@ String textPourcentage  = '';
                 },
                
                   child:
-                Text(
+                const Text(
                   'Retour à l\'accueil\n',
                   ),
                   

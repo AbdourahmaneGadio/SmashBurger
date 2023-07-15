@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
 
 class Recette3 extends StatefulWidget {
   const Recette3({super.key});
@@ -28,7 +27,7 @@ class _Recette3State extends State<Recette3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFCBF49),
+      backgroundColor: const Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
           child: SingleChildScrollView(
@@ -41,7 +40,7 @@ class _Recette3State extends State<Recette3> {
                       width: double.infinity,
                       height: 300,
                       decoration: BoxDecoration(
-                        color: Color(0xFFAC0D0D),
+                        color: const Color(0xFFAC0D0D),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
@@ -50,9 +49,9 @@ class _Recette3State extends State<Recette3> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(-1, -1),
+                        alignment: const AlignmentDirectional(-1, -1),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
                           child: IconButton(
                             icon:
                                 const Icon(Icons.arrow_back_rounded, size: 45),
@@ -65,13 +64,13 @@ class _Recette3State extends State<Recette3> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: const AlignmentDirectional(0, 0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
                           height: 2100,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
                               BoxShadow(
@@ -91,11 +90,11 @@ class _Recette3State extends State<Recette3> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
-                              Align(
+                              const Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      25, 16, 0, 0),
+                                      25, 16, 0, 0,),
                                   child: Text(
                                     'Crispy Burger',
                                     textAlign: TextAlign.start,
@@ -107,7 +106,7 @@ class _Recette3State extends State<Recette3> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                                 child: Row(
@@ -116,7 +115,7 @@ class _Recette3State extends State<Recette3> {
                                   children:<Widget> [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -128,7 +127,7 @@ class _Recette3State extends State<Recette3> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               'Facile',
                                               style: TextStyle(
@@ -143,7 +142,7 @@ class _Recette3State extends State<Recette3> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -155,7 +154,7 @@ class _Recette3State extends State<Recette3> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '5min',
                                               style: TextStyle(
@@ -170,7 +169,7 @@ class _Recette3State extends State<Recette3> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -182,7 +181,7 @@ class _Recette3State extends State<Recette3> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '1 personne',
                                               style: TextStyle(
@@ -198,7 +197,7 @@ class _Recette3State extends State<Recette3> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 300,
                                 child: Divider(
                                   thickness: 2,
@@ -209,9 +208,9 @@ class _Recette3State extends State<Recette3> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:<Widget> [
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Liste des ingrédients:',
                                       style: TextStyle(
@@ -221,20 +220,20 @@ class _Recette3State extends State<Recette3> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '- filets de poitrine de poulet\n- 1 tasse de farine tout usage\n- 1 cuillère à café de paprika\n- 2 gousses d\'ail hachées\n- Cheddar en tranches\n- Pains à burger\n- 1 tasse de chapelure panko\n- 1 tomate moyenne\n- 1 œuf',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Préparation:',
                                       style: TextStyle(
@@ -244,31 +243,31 @@ class _Recette3State extends State<Recette3> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '1. Préchauffez votre four à 200°C et préparez une plaque de cuisson en la recouvrant de papier sulfurisé.\n\n2. Dans un bol, mélangez la farine, le paprika, l\'ail en poudre, le sel et le poivre.\n\n3. Coupez l\'avocat en deux, retirez le noyau et écrasez la chair dans un petit bol avec une fourchette. Ajoutez une pincée de sel et de poivre.\n\n4. Dans un autre bol, fouettez l\'œuf et le lait ensemble.\n\n5. Dans un troisième bol, mettez la chapelure panko.\n\n6. Prenez les filets de poulet et trempez-les successivement dans la farine, l\'œuf battu et la chapelure panko, en veillant à bien recouvrir chaque morceau de poulet.\n\n7. Dans une poêle, faites chauffer l\'huile végétale à feu moyen-élevé. Faites cuire les filets de poulet jusqu\'à ce qu\'ils soient dorés et croustillants, environ 3-4 minutes de chaque côté.\n\n8.Pendant que les filets de poulet cuisent, faites griller les pains à burger jusqu\'à ce qu\'ils soient légèrement dorés.\n\n9.Pour assembler le burger, posez une feuille de laitue sur la base du pain à burger, ajoutez une tranche de tomate, un filet de poulet croustillant, une tranche de fromage cheddar, et terminez avec le pain à burger supérieur.\n\nVotre Crispy Burger est maintenant prêt à être dégusté ! ',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Histoire:',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w800,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       'En 1985, un chef de cuisine nommé Tony a commencé à travailler dans un petit restaurant de burgers. Il avait une passion pour la nourriture croustillante et a commencé à réfléchir à la façon de créer un burger avec une croûte croustillante et dorée. Après des mois d\'essais et d\'erreurs, il a finalement créé le Crispy Burger, un burger au poulet frit croustillant qui a rapidement gagné en popularité auprès des clients.',
                                       style: TextStyle(
@@ -320,18 +319,17 @@ class _Recette3State extends State<Recette3> {
                                   //   ),
                                   // ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.7, 0),
+                                    alignment: const AlignmentDirectional(0.7, 0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 8, 60),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          8, 8, 8, 60,),
                                       child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          primary:
-                                              Color.fromRGBO(247, 127, 0, 1),
-                                          side: BorderSide(
+                                          backgroundColor: const Color.fromRGBO(247, 127, 0, 1),
+                                          side: const BorderSide(
                                               width: 1,
                                               color:
-                                                  Color.fromARGB(0, 0, 0, 0)),
+                                                  Color.fromARGB(0, 0, 0, 0),),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(8),
@@ -340,8 +338,8 @@ class _Recette3State extends State<Recette3> {
                                         onPressed: () {
                                           Navigator.pushNamed(context, '/Recette4');
                                         },
-                                        child: Text(
-                                          "Voir recette n°4",
+                                        child: const Text(
+                                          'Voir recette n°4',
                                           style: TextStyle(
                                             color: Color.fromARGB(255, 255, 255, 255),
                                           ),

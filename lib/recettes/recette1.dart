@@ -29,7 +29,7 @@ class _Recette1State extends State<Recette1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFCBF49),
+      backgroundColor: const Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
           child: SingleChildScrollView(
@@ -42,7 +42,7 @@ class _Recette1State extends State<Recette1> {
                       width: double.infinity,
                       height: 300,
                       decoration: BoxDecoration(
-                        color: Color(0xFFAC0D0D),
+                        color: const Color(0xFFAC0D0D),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
@@ -51,9 +51,9 @@ class _Recette1State extends State<Recette1> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(-1, -1),
+                        alignment: const AlignmentDirectional(-1, -1),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
                           child: IconButton(
                             icon:
                                 const Icon(Icons.arrow_back_rounded, size: 45),
@@ -66,13 +66,13 @@ class _Recette1State extends State<Recette1> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: const AlignmentDirectional(0, 0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
                           height: 2000,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
                               BoxShadow(
@@ -92,11 +92,11 @@ class _Recette1State extends State<Recette1> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
-                              Align(
+                              const Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      25, 16, 0, 0),
+                                      25, 16, 0, 0,),
                                   child: Text(
                                     'Buffalo Burger',
                                     textAlign: TextAlign.start,
@@ -108,7 +108,7 @@ class _Recette1State extends State<Recette1> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                                 child: Row(
@@ -117,7 +117,7 @@ class _Recette1State extends State<Recette1> {
                                   children: <Widget>[
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: <Widget>[
@@ -129,7 +129,7 @@ class _Recette1State extends State<Recette1> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               'Facile',
                                               style: TextStyle(
@@ -144,7 +144,7 @@ class _Recette1State extends State<Recette1> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: <Widget>[
@@ -156,7 +156,7 @@ class _Recette1State extends State<Recette1> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '3min',
                                               style: TextStyle(
@@ -171,7 +171,7 @@ class _Recette1State extends State<Recette1> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: <Widget>[
@@ -183,7 +183,7 @@ class _Recette1State extends State<Recette1> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '1 personne',
                                               style: TextStyle(
@@ -199,7 +199,7 @@ class _Recette1State extends State<Recette1> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 300,
                                 child: Divider(
                                   thickness: 2,
@@ -210,9 +210,9 @@ class _Recette1State extends State<Recette1> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Liste des ingrédients:',
                                       style: TextStyle(
@@ -222,20 +222,20 @@ class _Recette1State extends State<Recette1> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '- Oignons\n- Tomates fraîches\n- Cornichons\n- Bacon fumé\n- Cheddar en tranches\n- Viande de boeuf hâchée\n- Herbes de provence\n- Barbecue sauce\n- Tabasco',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Préparation:',
                                       style: TextStyle(
@@ -245,33 +245,33 @@ class _Recette1State extends State<Recette1> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '1. Façonnez les steaks avec un emporte pièces avec poussoir par exemple ou à la main.\n\n2. Faites revenir un oignon dans une poêle avec de l\'huile d\'olive, ajoutez-y une petite cuillère à soupe de vinaigre et une cuillère à soupe de sucre.\n\n3. Laissez caraméliser quelques minutes\nFaites cuire les steaks dans une poêle avec de l\'huile d\'olive 1 minute de chaque côté\n\n4. Tranchez les buns en deux et badigeonnez les bases et les chapeaux d\'huile d\'olive.\n\n5. Garnissez les bases des buns avec un lit d\'oignons , disposez le steak puis une tranche de cheddar.\n\n6. Passez sous le grill à 200 ° dans la partie haute du four pendant 4 minutes en surveillant.\n\n7. En sortant du four, ajoutez une rondelle de tomate et les pousses d\'épinards et recouvrez avec les chapeaux.',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Histoire:',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w800,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
-                                      'En 1948 un jeune cuisinier du nom de Bill avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger \"Buffalo Burger\" en l\'honneur des bisons qui ont inspiré sa création.',
+                                      'En 1948 un jeune cuisinier du nom de Bill avait une idée en tête: créer un nouveau type de hamburger qui serait à la viande de boeuf fumé. Hicham a commencé à expérimenter avec différentes recettes et ingrédients, et finalement, il a trouvé la combinaison parfaite. Il a nommé son hamburger "Buffalo Burger" en l\'honneur des bisons qui ont inspiré sa création.',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w400,
@@ -321,18 +321,17 @@ class _Recette1State extends State<Recette1> {
                                   //   ),
                                   // ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.7, 0),
+                                    alignment: const AlignmentDirectional(0.7, 0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 8, 60),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          8, 8, 8, 60,),
                                       child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          primary:
-                                              Color.fromRGBO(247, 127, 0, 1),
-                                          side: BorderSide(
+                                          backgroundColor: const Color.fromRGBO(247, 127, 0, 1),
+                                          side: const BorderSide(
                                               width: 1,
                                               color:
-                                                  Color.fromARGB(0, 0, 0, 0)),
+                                                  Color.fromARGB(0, 0, 0, 0),),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(8),
@@ -340,13 +339,13 @@ class _Recette1State extends State<Recette1> {
                                         ),
                                         onPressed: () {
                                           Navigator.pushNamed(
-                                              context, '/Recette2');
+                                              context, '/Recette2',);
                                         },
-                                        child: Text(
-                                          "Voir recette n°2",
+                                        child: const Text(
+                                          'Voir recette n°2',
                                           style: TextStyle(
                                             color: Color.fromARGB(
-                                                255, 255, 255, 255),
+                                                255, 255, 255, 255,),
                                           ),
                                         ),
                                       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'variables.dart';
+import 'package:smash_burger/variables.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFCBF49),
+      backgroundColor: const Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
           child: SingleChildScrollView(
@@ -16,15 +16,15 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                   child: Container(
                     width: double.infinity,
                     height: 100,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x00FFFFFF),
                     ),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(1, 0, 0, 0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(1, 0, 0, 0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -34,8 +34,8 @@ class HomePage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0, 0, 20, 15),
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0, 0, 20, 15,),
                                 child: Image.asset(
                                   'assets/images/Logo_smash_burger.png',
                                   width: 70,
@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Text(
+                          const Text(
                             'Smash Burger',
                             style: TextStyle(
                               fontFamily: 'Rough',
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                 Container(
                   width: double.infinity,
                   height: 420,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: ListView.builder(
                     padding: EdgeInsets.zero,
                     primary: false,
@@ -71,13 +71,13 @@ class HomePage extends StatelessWidget {
                       Ressource ressource = formList[index];
 
                       return Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
+                        padding: const EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
                         child: Container(
                           width: 270,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 247, 247, 247),
-                            boxShadow: [
+                            color: const Color.fromARGB(255, 247, 247, 247),
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 4,
                                 color: Color(0x26000000),
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+                            padding: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -99,8 +99,8 @@ class HomePage extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(12),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        2, 2, 2, 2),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        2, 2, 2, 2,),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(12),
                                       child: Image.asset(
@@ -113,31 +113,30 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      12, 0, 0, 0,),
                                   child: Text(
                                     ressource.title,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontFamily: 'Poppins',
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      12, 0, 0, 0,),
                                   child: Text(
                                     ressource.des,
                                   ),
                                 ),
                                 ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                    primary:
-                                        Color.fromRGBO(252, 192, 73, 0.863),
-                                    side: BorderSide(
+                                    backgroundColor: const Color.fromRGBO(252, 192, 73, 0.863),
+                                    side: const BorderSide(
                                         width: 1,
                                         color:
-                                            const Color.fromARGB(0, 0, 0, 0)),
+                                            Color.fromARGB(0, 0, 0, 0),),
                                     elevation: 3,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8),
@@ -145,9 +144,9 @@ class HomePage extends StatelessWidget {
                                   ),
                                   onPressed: () {
                                     Navigator.pushNamed(
-                                        context, ressource.path);
+                                        context, ressource.path,);
                                   },
-                                  child: Text("En savoir plus"),
+                                  child: const Text('En savoir plus'),
                                 ),
                               ],
                             ),
@@ -157,7 +156,7 @@ class HomePage extends StatelessWidget {
                     },
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(16, 6, 0, 0),
                   child: Text(
                     'Entrainement',
@@ -171,11 +170,11 @@ class HomePage extends StatelessWidget {
                 Container(
                   width: double.infinity,
                   height: 320,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0x00FFFFFF),
                   ),
                   child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
                       child: ListView.builder(
                         padding: EdgeInsets.zero,
                         primary: false,
@@ -186,13 +185,13 @@ class HomePage extends StatelessWidget {
                           QuizRessource quiz = quizList[index];
                           return Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
+                                const EdgeInsetsDirectional.fromSTEB(16, 0, 16, 12),
                             child: Container(
                               width: double.infinity,
                               height: 90,
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 247, 247, 247),
-                                boxShadow: [
+                                color: const Color.fromARGB(255, 247, 247, 247),
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 3,
                                     color: Color(0x32000000),
@@ -209,7 +208,7 @@ class HomePage extends StatelessWidget {
                                   mainAxisSize: MainAxisSize.max,
                                   children: <Widget>[
                                     ClipRRect(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(8),
                                         bottomRight: Radius.circular(0),
                                         topLeft: Radius.circular(8),
@@ -223,8 +222,8 @@ class HomePage extends StatelessWidget {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12, 0, 0, 0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          12, 0, 0, 0,),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -234,7 +233,7 @@ class HomePage extends StatelessWidget {
                                         children: <Widget>[
                                           Text(
                                             quiz.nomQuiz,
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                               fontFamily: 'Outfit',
                                               color: Color(0xFF090F13),
                                               fontSize: 20,
@@ -245,11 +244,11 @@ class HomePage extends StatelessWidget {
                                             mainAxisSize: MainAxisSize.max,
                                             children: <Widget>[
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(0, 4, 0, 0),
                                                 child: Text(
                                                   quiz.desQuiz,
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                     fontFamily: 'Outfit',
                                                     color: Color(0xFF7C8791),
                                                     fontSize: 14,
@@ -269,7 +268,7 @@ class HomePage extends StatelessWidget {
                             ),
                           );
                         },
-                      )),
+                      ),),
                 ),
               ],
             ),

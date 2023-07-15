@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
 
 class Recette4 extends StatefulWidget {
   const Recette4({super.key});
@@ -28,7 +27,7 @@ class _Recette4State extends State<Recette4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFCBF49),
+      backgroundColor: const Color(0xFFFCBF49),
       body: SafeArea(
         child: GestureDetector(
           child: SingleChildScrollView(
@@ -41,7 +40,7 @@ class _Recette4State extends State<Recette4> {
                       width: double.infinity,
                       height: 300,
                       decoration: BoxDecoration(
-                        color: Color(0xFFAC0D0D),
+                        color: const Color(0xFFAC0D0D),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: Image.asset(
@@ -50,9 +49,9 @@ class _Recette4State extends State<Recette4> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(-1, -1),
+                        alignment: const AlignmentDirectional(-1, -1),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(12, 12, 0, 0),
                           child: IconButton(
                             icon:
                                 const Icon(Icons.arrow_back_rounded, size: 45),
@@ -65,13 +64,13 @@ class _Recette4State extends State<Recette4> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: const AlignmentDirectional(0, 0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 270, 0, 0),
                         child: Container(
                           width: double.infinity,
                           height: 1900,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xFFFCBF49),
                             boxShadow: [
                               BoxShadow(
@@ -91,11 +90,11 @@ class _Recette4State extends State<Recette4> {
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children:<Widget> [
-                              Align(
+                              const Align(
                                 alignment: AlignmentDirectional(-1, 0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      25, 16, 0, 0),
+                                      25, 16, 0, 0,),
                                   child: Text(
                                     'Le BigMac',
                                     textAlign: TextAlign.start,
@@ -107,7 +106,7 @@ class _Recette4State extends State<Recette4> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                                 child: Row(
@@ -116,7 +115,7 @@ class _Recette4State extends State<Recette4> {
                                   children:<Widget> [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -128,7 +127,7 @@ class _Recette4State extends State<Recette4> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               'Facile',
                                               style: TextStyle(
@@ -143,7 +142,7 @@ class _Recette4State extends State<Recette4> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -155,7 +154,7 @@ class _Recette4State extends State<Recette4> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '5min',
                                               style: TextStyle(
@@ -170,7 +169,7 @@ class _Recette4State extends State<Recette4> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          16, 16, 0, 0),
+                                          16, 16, 0, 0,),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children:<Widget> [
@@ -182,7 +181,7 @@ class _Recette4State extends State<Recette4> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    6, 0, 25, 0),
+                                                    6, 0, 25, 0,),
                                             child: Text(
                                               '1 personne',
                                               style: TextStyle(
@@ -198,7 +197,7 @@ class _Recette4State extends State<Recette4> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 300,
                                 child: Divider(
                                   thickness: 2,
@@ -209,9 +208,9 @@ class _Recette4State extends State<Recette4> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:<Widget> [
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Liste des ingrédients:',
                                       style: TextStyle(
@@ -221,20 +220,20 @@ class _Recette4State extends State<Recette4> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '- 2 steaks hachés\n- 4 tranches de fromage cheddar\n- 3 Pains à burger\n- 1/4 tasse de cornichons coupés en petits dés\n- 2 cuillères à soupe d\'oignon coupé en petits dés\n- Sauce secrète Big Mac\n- 4 feuilles de laitue iceberg\n- Sel et poivre',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Préparation:',
                                       style: TextStyle(
@@ -244,31 +243,31 @@ class _Recette4State extends State<Recette4> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       '1. Préchauffez votre grill ou votre plancha à feu moyen-élevé.\n\n2. Dans un bol, mélangez les cornichons et les oignons.\n\n3. Dans un autre bol, mélangez la mayonnaise, le ketchup, la moutarde, le vinaigre, le sucre, le paprika, le sel et le poivre pour faire la sauce spéciale.\n\n4. Faites cuire les steaks hachés jusqu\'à ce qu\'ils soient bien cuits, environ 2-3 minutes de chaque côté.\n\n5. Coupez les pains à burger en deux et faites-les griller sur le grill ou la plancha jusqu\'à ce qu\'ils soient légèrement dorés.\n\n6. Pour assembler le burger, étalez une couche de sauce spéciale sur le pain à burger inférieur, ajoutez une feuille de laitue, un steak haché de 50 g, une tranche de fromage cheddar, une deuxième tranche de pain à burger, puis une deuxième couche de sauce spéciale, une feuille de laitue, un steak haché de 30 g, une tranche de fromage cheddar, et enfin le pain à burger supérieur.\n\nVotre Big Mac est maintenant prêt à être dégusté !',
                                       style: TextStyle(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w400,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 16, 0, 8),
+                                        12, 16, 0, 8,),
                                     child: Text(
                                       'Histoire:',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w800,
-                                          fontFamily: 'Poppins'),
+                                          fontFamily: 'Poppins',),
                                     ),
                                   ),
-                                  Padding(
+                                  const Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        18, 0, 18, 20),
+                                        18, 0, 18, 20,),
                                     child: Text(
                                       'En 1967, un franchisé de McDonald\'s nommé Jim Delligatti avait une idée pour un nouveau burger. Il a voulu créer un burger plus gros que le burger standard de McDonald\'s, avec deux steaks hachés, une sauce spéciale et trois tranches de pain. Après plusieurs essais, il a finalement créé le Big Mac, qui est rapidement devenu l\'un des burgers les plus populaires au monde.',
                                       style: TextStyle(
@@ -320,18 +319,17 @@ class _Recette4State extends State<Recette4> {
                                   //   ),
                                   // ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.7, 0),
+                                    alignment: const AlignmentDirectional(0.7, 0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 8, 60),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          8, 8, 8, 60,),
                                       child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          primary:
-                                              Color.fromRGBO(247, 127, 0, 1),
-                                          side: BorderSide(
+                                          backgroundColor: const Color.fromRGBO(247, 127, 0, 1),
+                                          side: const BorderSide(
                                               width: 1,
                                               color:
-                                                  Color.fromARGB(0, 0, 0, 0)),
+                                                  Color.fromARGB(0, 0, 0, 0),),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(8),
@@ -340,8 +338,8 @@ class _Recette4State extends State<Recette4> {
                                         onPressed: () {
                                           Navigator.pushNamed(context, '/Home');
                                         },
-                                        child: Text(
-                                          "Passer aux Quiz",
+                                        child: const Text(
+                                          'Passer aux Quiz',
                                           style: TextStyle(
                                             color: Color.fromARGB(255, 255, 255, 255),
                                           ),
